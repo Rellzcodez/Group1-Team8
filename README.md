@@ -16,3 +16,15 @@ The landing page has a place for users to subscribe to newsletter. Mobile, table
 
 
 ## About Us
+
+***Our Website will:***
+- Help users manage their workout schedules with other activities by creating a
+ flexible time management scheme and also reminding them of the schedules.
+
+- Enable users to speak directly to our gym instructors, provide virtual workout sessions 
+and also make room for in-house masseur at the user's convenience.
+
+- Educate users on keeping up with a healthy and fit lifestyle while monitoring 
+their progress and users get rewarded for workout sessions completed.
+
+- Provide a User-friendly interface and a better interaction with the gym organisation.
