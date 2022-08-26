@@ -19,7 +19,7 @@ body{
     border-radius: 40px;
     padding: 20px;
     width: 800px;
-    height: 400px;
+    height: 450px;
 }
 
 .form-container .form-container-desc{
@@ -46,21 +46,38 @@ form input:not([type='checkbox']) {
     border-radius: 2px;
     color: #858A9B;
 }
+#fullname, #emailAddress, #password {width: 70%; 
+    position: relative; left: 100px;}
 
 .checkbox_label{
     display: inline;
 }
+
+.terms{position: relative; left: 100px;}
+
+.remember{position: relative; bottom: 27px;
+     position: relative; left: 510px;}
 
 
 
 form input:focus{
     outline: 1px solid cyan;
 }
+.signup{width: 50%; 
+    box-sizing: border-box;
+     border: 1px solid;
+      border-radius: 5px;
+       position: relative; left: 200px;
+        background-color: aquamarine;}
 
-.form_cta{
-    font-size: 13px;
-}
+.sign{text-decoration: none; 
+    color: black; 
+    position: relative; left: 150px;}
 
-.form_cta a {
+.a{text-decoration: none; 
+    color: black;}
+
+.cta{position: relative; left: 270px; 
+    position: relative; top: 20px;}
+
     
-}
