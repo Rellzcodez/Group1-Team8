@@ -11,7 +11,7 @@
 *,
 ::before,
 ::after {
-  padding: o;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
@@ -144,11 +144,11 @@ html {
   background: var(--baby-blue);
 }
 /* Resetting defaults margins and paddings to zero */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 /* Styling of Session Start Here */
 /* setting default colors */
 
@@ -161,13 +161,13 @@ html {
   background-color: var(--baby-blue);
   margin: 36px 32px;
   border-radius: 40px;
-  font-family: Poppins;
+  /* font-family: Poppins; */
 }
 /* 86em */
 .session-lable {
   position: relative;
   padding-top: 50px;
-  font-weight: 500px;
+  font-weight: 700px;
 }
 .session-wrapper {
   display: flex;
@@ -178,6 +178,8 @@ html {
   height: 37.5em;
   background-color: var(--white);
   border-radius: 40px;
+    /* margin: 49px 46px; */
+
 }
 .muscle-gain,
 .weight-loss {
@@ -185,7 +187,33 @@ html {
 }
 
 /* body-building */
+.body-building-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .body-building-wrapper img{
+  padding: 50px;
+} */
+.body-building-lable{
+  margin-top: 32px;
+  font-weight: 700;
+}
+.see-all-session-lable a:active{
+  font-weight: 700;
+  color: var(--black);
+}
+.see-all-session-lable a{
+  color: var(--black);
+}
 
+.see-all-session-lable{
+  font-weight: 700;
+}
+
+.arrow-vector{
+  margin-left: 2px;
+}
 /* muscle-gain */
 
 /* weight-loss */
