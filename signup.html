@@ -4,42 +4,55 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/signup.css">
         <title>SIGN UP</title>
     </head>
     <body>
-        <h1 class="heading">welcome, let's get you fit!</h1>
 
-        <h3 class="heading" <b>Create an account</b></h3>
 
-        <form action="action_page.php" method="post">
-        <div class="content">
-            <div class="name">
-                <p>Full Name</p>
+        <div class="form-container">
+            <div class="form-container-desc">
+
+                <h1>welcome, let's get you fit!</h1>
+                <p  <strong>Create an account</strong></p>
             </div>
-
-            <div class="name">
-                <p>Email Address</p>
+            <form>   
+            <div>
+                <input type="text" placeholder="Full Name" id="fullname">
             </div>
-
-            <div class="name">
-                <p>Password</p>
+    
+            <div>
+                <input type="email" placeholder="Email Address" id="emailAddress">
             </div>
-
-            <div class="checkboxes">
-                <input type="checkbox" id="cbx" name="T&C">
-                <label for="cbx"> I agree to the <B>TERMS & CONDITIONS</B></label> 
-                <input type="checkbox" id="cbx2" name="remember-me">
-                <label for="cbx2"> Remember me</label><br>
+    
+            <div>
+                <input type="password" placeholder="Password" id="password">
             </div>
+    
+
+            
+                <div>
+                        
+                        <label class="checkbox_label" for="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                            
+                            I agree to the <strong>TERMS & CONDITIONS</strong></label> 
+
+                        
+                        <label class="checkbox_label" for="remember_me">   <input type="checkbox" id="remember_me" name="terms"> Remember Me
+                         
+                        </strong></label> 
+                </div>
 
             <div class="submit">
                 <input type="submit" value="Sign Up">
             </div>
                
-            <p>Already have an account? <b>SIGN IN</b></p>
+            <p  class="form_cta">Already have an account? <a href="/sigmin.html">Sign In</a> </p>
 
+            </form>
         </div>
 
     </body>
     
-</html>
+</Html>
