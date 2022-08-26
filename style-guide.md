@@ -19,9 +19,9 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size (paragraph): --px
+- Font size (paragraph): 16px
 
 ### Font
 
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins?query=Poppins)
-- Weights: 400, 600, 700, 800
+- Weights: 400, 600, 700, 800.

@@ -32,8 +32,8 @@ their progress and users get rewarded for workout sessions completed.
 
 ## Collaborators
 
-![Group 1 Team 8 Collaborators](images/Group%201%20Team%208%20Flyer%203.jpg)
+![Group 1 Team 8 Collaborators](images/Group%201%20Team%208%20Flyer%209.jpg)
 
 ## Got feedback for us?
 
-We love receiving feedback! We're always looking to improve our implementation and platform. So if you have anything you'd like to mention, please email example[at]gmail[dot]com.
+We love receiving feedback! We're always looking to improve our implementation and platform. So if you have anything you'd like to mention, please email example@gmail.com.
