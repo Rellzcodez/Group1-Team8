@@ -1,0 +1,40 @@
+/* Resetting defaults margins and paddings to zero */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styling of Session Start Here */
+/* setting default colors */
+
+.session-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 86em;
+    height: 57em;
+    background-color:  #B4EFF5;
+    margin: 36px 32px;
+    border-radius: 40px;
+}
+.session-lable{
+    position: relative;
+    padding-top: 50px;
+}
+.session-wrapper{
+    display: flex;
+    margin: 49px 46px;
+}
+.session-item{
+    width: 25em;
+    height: 37.5em;
+    background-color: white;
+    border-radius: 40px;
+
+}
+.muscle-gain,.weight-loss{
+    margin-left: 42px;
+
+}
+
+/* Styling of Session Ends Here */
