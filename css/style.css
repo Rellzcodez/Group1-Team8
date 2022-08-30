@@ -143,27 +143,17 @@ html {
   height: 20px;
   background: var(--baby-blue);
 }
-/* Resetting defaults margins and paddings to zero */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-/* Styling of Session Start Here */
-/* setting default colors */
-
-.session-container {
+/* Sesseion */
+.session-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 100%; */
   height: 57em;
   background-color: var(--baby-blue);
   margin: 36px 32px;
   border-radius: 40px;
-  /* font-family: Poppins; */
+  font-family: Poppins;
 }
-/* 86em */
 .session-lable {
   position: relative;
   padding-top: 50px;
@@ -171,39 +161,33 @@ html {
 }
 .session-wrapper {
   display: flex;
+  gap: 42px;
   margin: 49px 46px;
 }
 .session-item {
   width: 25em;
   height: 37.5em;
-  background-color: var(--white);
   border-radius: 40px;
-    /* margin: 49px 46px; */
 
 }
-.muscle-gain,
-.weight-loss {
-  margin-left: 42px;
-}
-
-/* body-building */
-.body-building-wrapper{
+/* body-building and weight loss*/
+.body-building-wrapper,.weight-loss-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
-/* .body-building-wrapper img{
-  padding: 50px;
-} */
-.body-building-lable{
+.body-building-lable,.weight-loss-label {
   margin-top: 32px;
   font-weight: 700;
 }
+/* See all session */
 .see-all-session-lable a:active{
   font-weight: 700;
   color: var(--black);
 }
 .see-all-session-lable a{
+  text-decoration: none;
   color: var(--black);
 }
 
@@ -219,12 +203,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .muscle-gain-label{
   margin: 32px;
 }
-
-/* weight-loss */
 
 /* Styling of Session Ends Here */
