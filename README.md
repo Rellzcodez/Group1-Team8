@@ -25,8 +25,7 @@ The landing page has a place for users to subscribe to newsletter. Mobile, table
 * Enable users to speak directly to our gym instructors, provide virtual workout sessions.
 and also make room for in-house masseur at the user's convenience.
 
-* Educate users on keeping up with a healthy and fit lifestyle while monitoring.
-their progress and users get rewarded for workout sessions completed.
+* Educate users on keeping up with a healthy and fit lifestyle while monitoring their progress which would be aided by our consultant team.
 
 * Provide a User-friendly interface and a better interaction with the gym organisation.
 

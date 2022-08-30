@@ -6,6 +6,8 @@
   --baby-blue: rgb(180, 239, 245);
   --black: rgb(0, 0, 0);
   --light-grey: rgb(206, 208, 215);
+  --dark-grey: rgba(41, 45, 50, 1);
+
 }
 
 *,
@@ -84,7 +86,7 @@ html {
   justify-content: space-between;
 }
 
-/* Illustration Hero*/
+/* Illustration Hero */
 .container-illustration {
   display: flex;
   background-image: linear-gradient(
@@ -211,3 +213,77 @@ html {
 }
 
 /* Styling of Session Ends Here */
+
+
+
+
+/* Pricing Session */
+
+.pricing-heading{
+    background: var(--dark-grey);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.pricing-heading h1{
+    margin: 0 auto;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--white);
+}
+.pricing-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px 60px;
+}
+.cards{
+    padding: 20px 20px 30px;
+    width: 255px;
+    height: 390px;
+    border-radius: 40px;
+    background: var(--baby-blue);
+}
+.professionals{
+    margin-top: -35px;
+}
+.elite{
+    margin-top: -70px;
+}
+.plan-name{
+    text-align: center;
+}
+.plan-duration{
+    margin: 10px auto 40px;
+    text-align: center;
+}
+.plan-duration span{
+    font-size: 15px;
+    margin-left: 5px;
+}
+.plan-benefits{
+    list-style: none;
+    margin-bottom: 22px;
+}
+.li-benefits{
+    margin: 10px auto;
+    font-size: 16px;
+}
+.li-benefits img{
+    margin-right: 15px;
+}
+.cards a{
+    display: flex;
+    justify-content: center;
+}
+.pricing-btn{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--baby-blue);
+    background: var(--dark-grey);
+    border: none;
+    padding: 10px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
