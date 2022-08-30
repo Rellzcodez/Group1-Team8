@@ -161,32 +161,21 @@ html {
 }
 .session-wrapper {
   display: flex;
+  gap: 42px;
   margin: 49px 46px;
 }
 .session-item {
   width: 25em;
   height: 37.5em;
-  background-color: var(--white);
   border-radius: 40px;
 
 }
-.muscle-gain,
-.weight-loss {
-  margin-left: 42px;
-}
-
 /* body-building and weight loss*/
 .body-building-wrapper,.weight-loss-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-}
-.body-building-wrapper{
-padding-left: 46px;
-}
-.weight-loss-wrapper{
-padding-right: 46px;
 }
 .body-building-lable,.weight-loss-label {
   margin-top: 32px;
@@ -198,6 +187,7 @@ padding-right: 46px;
   color: var(--black);
 }
 .see-all-session-lable a{
+  text-decoration: none;
   color: var(--black);
 }
 
