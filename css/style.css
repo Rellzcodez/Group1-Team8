@@ -213,6 +213,19 @@ html {
 }
 
 /* Styling of Session Ends Here */
+.live-workout{margin: 10px 50px 10px 10px; 
+  position: relative; left: 50px;
+display: flex;
+  flex-direction: column;
+width: 90%;}
+.live{color: var(--white);
+  position: relative; bottom: 450px; 
+  width: 400px;
+  padding-left: 100px;
+  font-weight: 600;
+  text-align: center;
+}
+
 
 /* Stay Fit */
 .stay-fit-container{
