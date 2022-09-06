@@ -273,21 +273,27 @@ width: 90%;}
 }
 
 /* live session */
-.live-workout{
-  margin: 10px 50px 10px 10px;
-  position: relative; left: 50px;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-}
 .live{
-  color: var(--white);
-  position: relative; bottom: 450px;
-  width: 400px;
-  padding-left: 100px;
-  font-weight: 600;
-  text-align: center;
+position: absolute;
+width: 310px;
+height: 104px;
+left: 75px;
+top: 2861px;
 }
+.live-workout{
+position: absolute;
+width: 1376px;
+height: 717px;
+left: 32px;
+top: 2655px;
+
+}
+.live-workout img{
+  background: url(...jpg);
+border-radius: 40px;
+}
+
+
 
 /* Pricing Session */
 
