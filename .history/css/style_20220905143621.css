@@ -307,7 +307,7 @@ width: 90%;}
 .pricing-cards{
     display: flex;
     justify-content: space-between;
-    margin: 120px 100px 40px;
+    margin: 100px 100px 60px;
 }
 .cards{
     padding: 20px 20px 30px;
