@@ -504,12 +504,13 @@ width: 90%;}
   .pricing-cards{
     flex-direction: column;
     margin: 40px 0 80px;
-    height: 900px;
+    height: 950px;
   }
   .cards{
-    width: 215px;
-    height: 280px;
+    width: 245px;
+    height: 300px;
     margin: 0 auto; 
+    border-radius: 25px;
   }
   .plan-benefits{
     margin-bottom: 10px;
@@ -523,10 +524,11 @@ width: 90%;}
   }
   .plan-name{
     font-size: 20px;
+    margin-bottom: 15px;
   }
   .plan-duration{
     font-size: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .plan-duration span{
     font-size: 12px;
