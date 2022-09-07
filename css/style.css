@@ -538,3 +538,106 @@ width: 90%;}
     width: 170px;
   }
 }
+/* THE LOCATION SESSION STARTS HERE  */
+.our-gym-studios{
+  text-align: center;
+  font-family: Poppins;
+  letter-spacing: 7px;
+  line-height: 60px;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  background-color: var(--baby-blue);
+
+}
+.gym-locations-container{
+  position: absolute;
+  height: 2107px;
+  margin: 32px;
+  border-radius: 40px;
+  background-color: #C8FFFF ;
+}
+.gym-studio-wraper-1{
+  display: flex;
+  flex-direction: column;
+  background-color:#B4EFF5;
+  position: relative;
+  margin: 34px 25px;
+}
+
+.dumbbell-logo-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+background-color: #292D32;
+width: 343px;
+height: 82px;
+margin: 10px 10px;
+border-radius: 0 0 10px 0;
+}
+.lagos{
+  color: var(--white);
+  padding-top: 25px;
+}
+.dumbbell-logo{
+  background-color: #B4EFF5;
+  width: 62px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.dumbbell-logo img{
+  width: 28.44px;
+  position: relative;
+  top: 18px;
+  left: 15px;
+}
+.lagos-card-wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap:21px;
+  margin-left: 10px;
+
+}
+.card {
+  position: relative;
+  background-color: #312E2E;
+  margin-top: 18px;
+  border-radius: 16px;
+  justify-content: center;
+  width: 396px;
+  height: 496px;
+  ;
+}
+.image img{
+  width: 395.33px;
+  height: 273px;
+  padding: 10px;
+}
+.description{
+  font-family: poppins;
+  text-align: center;
+  color: var(--white);
+  font-size: 24px;
+  line-height: 36px;
+  width: 411px;
+  padding: 10px;
+}
+.book-a-session{
+  text-align: center;
+  margin-top: 20px;
+}
+.book-a-session a{
+  text-decoration: none;
+  background-color: var(--baby-blue);
+  font-family: poppins;
+  color: black;
+  font-weight: 700px;
+  padding: 11px 90px;
+  border-radius: 10px;
+  line-height: 18px;
+  font-size: 14px;
+
+
+}
+/* THE LOCATION SESSION ENDS HERE  */
+
