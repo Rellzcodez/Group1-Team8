@@ -22,8 +22,7 @@ The landing page has a place for users to subscribe to newsletter. Mobile, table
 
 * Help users manage their workout schedules with other activities by creating a flexible time management scheme and also reminding them of the schedules.
 
-* Enable users to speak directly to our gym instructors, provide virtual workout sessions.
-and also make room for in-house masseur at the user's convenience.
+* Enable users to speak directly to our gym instructors with our provided virtual workout sessions. We also make room for in-house masseur at the user's convenience.
 
 * Educate users on keeping up with a healthy and fit lifestyle while monitoring their progress which would be aided by our consultant team.
 
