@@ -85,6 +85,12 @@ html {
   display: flex;
   justify-content: space-between;
 }
+.head-title,
+.hamburger,
+.mobile-registration,
+.mobile-get-started{
+  display: none;
+}
 
 /* Illustration Hero */
 .container-illustration {
@@ -99,8 +105,8 @@ html {
   margin: 0 32px 25px;
 }
 .heading-btn {
-  background: url(../images/illustration-hero.png) right bottom / 613px 613px
-    no-repeat;
+  background: url(../images/illustration-hero.png) right bottom 
+  / 613px 613px no-repeat;
   width: 100%;
   padding-left: 140px;
 }
@@ -145,6 +151,125 @@ html {
   height: 20px;
   background: var(--baby-blue);
 }
+
+/* Navigation and Illustration Hero Responsiveness - Mobile View */
+@media (max-width: 600px) {
+  .head-title,
+  .hamburger,
+  .mobile-registration,
+  .mobile-get-started{
+    display: initial;
+  }
+  .navigation{
+    display: none;
+  }
+  
+  .primary-header{
+    background: transparent;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #logo{
+    height: 50px;
+  }
+  .head-title{
+    color: var(--white);
+    padding: 12px;
+  }
+  .hamburger{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: var(--baby-blue);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 10px 15px 10px 0;
+  }
+  .hamburger-bar,
+  .hamburger::before,
+  .hamburger::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--black);
+    margin: 4px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  /* Illustration-hero */
+
+  .container-illustration{
+    margin: 0 0 35px;
+    border-radius: 0 0 40px 40px;
+    height: 428px;
+  }
+  .heading-btn{
+    background: url(../images/illustration-hero.png) 35px bottom 
+    / 315px 315px no-repeat;
+    padding: 0;
+    text-align: center;
+  }
+  .primary-heading {
+    font-size: 28px;
+    width: 90%;
+    color: var(--white);
+    line-height: initial;
+    margin: 0 auto;
+    padding: 30px 0 100px;
+  }
+  .heading-btn a button{
+    display: none;
+  }
+  .mobile-get-started{
+    position: absolute;
+    left: auto;
+    top: 460px;
+    width: 210px;
+    background: var(--baby-blue);
+    border-radius: 10px;
+    padding: 10px 38px;
+    border: none;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .carousel-circle{
+    margin-bottom: 37px;
+  }
+  .tracker{
+    width: 5px;
+    height: 5px;
+    margin: 0 3px;
+  }
+  .active-track{
+    width: 10px;
+    height: 10px;
+  }
+  .mobile-registration{
+    background: var(--baby-blue);
+    height: 50px;
+    display: flex;
+  }
+  .box{
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .vr{
+    height: 30px;
+    display: block;
+    width: 1px;
+    background: var(--black);
+    margin: 10px 0;
+  }
+}
+
 /* Sesseion */
 .session-container{
   display: flex;
@@ -213,6 +338,16 @@ html {
 }
 
 /* Styling of Session Ends Here */
+
+/* Our Sessions Responsiveness - Mobile View */
+@media (max-width: 600px) {
+  .session-container{
+    width: 100%;
+    margin: 60px 0;
+    padding: 0 40px;
+  }
+}
+
 .live-workout{margin: 10px 50px 10px 10px; 
   position: relative; left: 50px;
 display: flex;
@@ -292,7 +427,7 @@ width: 90%;}
 /* Pricing Session */
 
 .pricing-heading{
-    background: var(--dark-grey);
+    background: var(--baby-blue);
     display: flex;
     text-align: center;
     align-items: center;
@@ -302,7 +437,7 @@ width: 90%;}
     padding: 20px 0;
     font-weight: 700;
     font-size: 30px;
-    color: var(--white);
+    color: var(--black);
 }
 .pricing-cards{
     display: flex;
@@ -358,4 +493,46 @@ width: 90%;}
     border-radius: 10px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+/* Pricing Section Responsiveness - Mobile View */
+@media (max-width: 600px) {
+ 
+  .pricing-heading h1{
+    font-size: 20px;
+  }
+  .pricing-cards{
+    flex-direction: column;
+    margin: 40px 0 80px;
+    height: 900px;
+  }
+  .cards{
+    width: 215px;
+    height: 280px;
+    margin: 0 auto; 
+  }
+  .plan-benefits{
+    margin-bottom: 10px;
+  }
+  .li-benefits{
+    margin: 5px auto;
+    font-size: 12px;
+  }
+  .li-benefits img{
+    height: 12px;
+  }
+  .plan-name{
+    font-size: 20px;
+  }
+  .plan-duration{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .plan-duration span{
+    font-size: 12px;
+  }
+  .pricing-btn{
+    padding: 10px 20px;
+    width: 170px;
+  }
 }
