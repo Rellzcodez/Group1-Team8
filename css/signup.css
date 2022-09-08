@@ -105,8 +105,38 @@ form input:focus{
 
 .cta{position: relative; left: 270px; 
     position: relative; top: 20px;
-    font-weight: lighter;
+    font-weight: inherit;
     padding-top: 3px;
 }
 
+        .signup:hover {
+            background-color: #343C59;
+        }
     
+        .signup:active {
+            background-color: #858A9B;
+        }
+    
+        .signup:disabled {
+            background-color: #CED0D7;
+        }
+    
+        .sign:hover {
+            color: rgb(255, 255, 255);
+        }
+    
+        .sign:active {
+            color: rgb(255, 255, 255);
+        }
+    
+        .cta:hover {
+            color: #858A9B;
+        }
+    
+        .a:hover {
+            color: #858A9B;
+        }
+    
+        .a:active {
+            color: #858A9B;
+        }
