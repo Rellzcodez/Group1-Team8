@@ -27,6 +27,14 @@ html {
   background: var(--denim-blue);
 }
 
+.fade-in{
+  opacity: 1;
+  transition: opacity 450ms ease-in-out;
+}
+.fade-in.appear{
+  opacity: 1;
+}
+
 .primary-header {
   padding: 0 32px 0 36px;
 }
@@ -62,6 +70,12 @@ html {
 .other-nav-link {
   margin: 15px 60px 10px 0;
 }
+.other-nav-link a{
+  transition: all 0.4s;
+}
+.other-nav-link a:hover{
+  color: rgb(11, 197, 218);
+}
 .home-nav-link {
   background: var(--baby-blue);
   width: 130px;
@@ -71,7 +85,13 @@ html {
   border-radius: 5px;
   border: 1px solid var(--light-grey);
   text-align: center;
-  padding: 10px 0;
+  padding: 7px 0;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.home-nav-link:hover{
+  background: transparent;
+  border: 3px solid var(--denim-blue);
 }
 .register-login {
   width: 255px;
@@ -80,10 +100,22 @@ html {
   border-radius: 5px;
   padding: 0 31px;
 }
+.register-login a{
+  transition: all 0.4s;
+}
+.register-login a:hover{
+  color: rgb(11, 197, 218);
+}
 .nav-secondary-links {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
+}
+.head-title,
+.hamburger,
+.mobile-registration,
+.mobile-get-started{
+  display: none;
 }
 
 /* Illustration Hero */
@@ -94,22 +126,54 @@ html {
     rgb(180, 239, 245, 0.8),
     rgb(12, 21, 56)
   );
-  height: 650px;
+  height: 600px;
   border-radius: 40px;
   margin: 0 32px 25px;
+  overflow: hidden;
 }
 .heading-btn {
-  background: url(../images/illustration-hero.png) right bottom / 613px 613px
+  background: url(../images/illustration-hero.png) right bottom / 573px 573px
     no-repeat;
   width: 100%;
   padding-left: 140px;
 }
+.slide{
+  height: 600px;
+  width: 1300px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
+#slide-2{
+  background: url(../images/slide-2.jpg) no-repeat;
+}
+#slide-3{
+  background: url(../images/slide-3.jpg) no-repeat;
+}
+#slide-4{
+  background: url(../images/slide-4.jpg) no-repeat;
+}
+#slide-5{
+  background: url(../images/slide-5.jpg) no-repeat;
+}
+#slide-6{
+  background: url(../images/slide-6.jpg) no-repeat;
+}
+#slide-7{
+  background: url(../images/slide-7.jpg) no-repeat;
+}
+#slide-8{
+  background: url(../images/slide-8.jpg) no-repeat;
+}
+
 .primary-heading {
   font-size: 75px;
   width: 48%;
   color: var(--white);
   line-height: 100px;
-  margin: 96px 0 49px;
+  margin: 56px 0 49px;
 }
 .primary-heading span {
   text-decoration: underline;
@@ -121,10 +185,19 @@ html {
   padding: 10px 132px;
   border: none;
   cursor: pointer;
+  transition: all .4s;
 }
 .get-started {
   font-size: 16px;
   font-weight: 800;
+}
+.heading-btn a button:hover{
+  color:var(--white);
+  background: var(--denim-blue);
+  opacity: 90%;
+  box-shadow: 2px 5px 15px var(--denim-blue);
+  transform: scale(105%);
+  margin-left: 15px;
 }
 .carousel-circle {
   display: flex;
@@ -145,32 +218,181 @@ html {
   height: 20px;
   background: var(--baby-blue);
 }
+
+/* Navigation and Illustration Hero Responsiveness - Mobile View */
+@media (max-width: 600px) {
+  .head-title,
+  .hamburger,
+  .mobile-registration,
+  .mobile-get-started{
+    display: initial;
+  }
+  .navigation{
+    display: none;
+  }
+  
+  .primary-header{
+    background: transparent;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #logo{
+    height: 50px;
+  }
+  .head-title{
+    color: var(--white);
+    padding: 12px;
+  }
+  .hamburger{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: var(--baby-blue);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 10px 15px 10px 0;
+  }
+  .hamburger-bar,
+  .hamburger::before,
+  .hamburger::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--black);
+    margin: 4px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  /* Illustration-hero */
+
+  .container-illustration{
+    margin: 0 0 35px;
+    border-radius: 0 0 40px 40px;
+    height: 428px;
+  }
+  .heading-btn{
+    background: url(../images/illustration-hero.png) 35px bottom 
+    / 315px 315px no-repeat;
+    padding: 0;
+    text-align: center;
+  }
+  .slide{
+    height: 428px;
+    width: 100%;
+    transition: all 0.4s;
+  }
+  #slide-2{
+    background: url(../images/slide-2.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-3{
+    background: url(../images/slide-3.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-4{
+    background: url(../images/slide-4.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-5{
+    background: url(../images/slide-5.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-6{
+    background: url(../images/slide-6.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-7{
+    background: url(../images/slide-7.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-8{
+    background: url(../images/slide-8.jpg) center / 520px 450px no-repeat;
+  }
+
+  .primary-heading {
+    font-size: 28px;
+    width: 90%;
+    color: var(--white);
+    line-height: initial;
+    margin: 0 auto;
+    padding: 30px 0 100px;
+  }
+  .heading-btn a button{
+    display: none;
+  }
+  .mobile-get-started{
+    position: absolute;
+    left: auto;
+    top: 460px;
+    width: 210px;
+    background: var(--baby-blue);
+    border-radius: 10px;
+    padding: 10px 38px;
+    border: none;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .carousel-circle{
+    margin-bottom: 37px;
+  }
+  .tracker{
+    width: 5px;
+    height: 5px;
+    margin: 0 3px;
+  }
+  .active-track{
+    width: 10px;
+    height: 10px;
+  }
+  .mobile-registration{
+    background: var(--baby-blue);
+    height: 50px;
+    display: flex;
+  }
+  .box{
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .vr{
+    height: 30px;
+    display: block;
+    width: 1px;
+    background: var(--black);
+    margin: 10px 0;
+  }
+}
+#slide-2,#slide-3,#slide-4,#slide-5,
+#slide-6,#slide-7,#slide-8{
+  background-size: cover;
+  background-position: top center;
+}
 /* Sesseion */
 .session-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 57em;
+  height: 49em;
   background-color: var(--baby-blue);
   margin: 36px 32px;
   border-radius: 40px;
-  font-family: Poppins;
 }
 .session-lable {
   position: relative;
   padding-top: 50px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 .session-wrapper {
   display: flex;
-  gap: 42px;
-  margin: 49px 46px;
+  gap: 65px;
+  margin: 20px 0;
 }
 .session-item {
-  width: 25em;
-  height: 37.5em;
+  width: 22em;
+  height: 32em;
   border-radius: 40px;
-
+  transition: all .4s;
 }
 /* body-building and weight loss*/
 .body-building-wrapper,.weight-loss-wrapper {
@@ -180,9 +402,28 @@ html {
 
 }
 .body-building-lable,.weight-loss-label {
-  margin-top: 32px;
+  margin-top: 25px;
   font-weight: 700;
 }
+.body-building{
+  background: url(../images/body-building-sess.png) top center;
+}
+.weight-loss{
+  background: url(../images/weight-loss-sess.png) top center;
+}
+/* muscle-gain */
+.muscle-gain-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.muscle-gain{
+  background: url(../images/muscle-gain-sess.png) center;
+}
+.muscle-gain-label{
+  margin-top: 25px;
+}
+
 /* See all session */
 .see-all-session-lable a:active{
   font-weight: 700;
@@ -200,19 +441,43 @@ html {
 .arrow-vector{
   margin-left: 2px;
 }
-/* muscle-gain */
-.muscle-gain-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
-
-.muscle-gain-label{
-  margin: 32px;
+.session-item:hover,
+.session-item:focus{
+  box-shadow: 2px 4px 15px rgb(0, 0, 0, .8);
+  transform: translateY(-10px);
 }
 
 /* Styling of Session Ends Here */
+
+/* Our Sessions Responsiveness - Mobile View */
+@media (max-width: 600px) {
+  .session-container{
+    width: 100%;
+    margin: 60px 0;
+    height: 105em;
+    padding: 0 40px;
+  }
+  .session-wrapper{
+    flex-direction: column;
+  }
+  .session-item{
+    width: 20em;
+    height: 25em;
+    margin-top: 10px;
+  }
+  .body-building-lable,.weight-loss-label,
+  .muscle-gain-label{
+    margin-top: 15px;
+  }
+  .muscle-gain,
+  .body-building,
+  .weight-loss{
+    background-position: top center;
+  }
+}
+
+
 .live-workout{margin: 10px 50px 10px 10px; 
   position: relative; left: 50px;
 display: flex;
@@ -292,7 +557,7 @@ width: 90%;}
 /* Pricing Session */
 
 .pricing-heading{
-    background: var(--dark-grey);
+    background: var(--baby-blue);
     display: flex;
     text-align: center;
     align-items: center;
@@ -302,7 +567,7 @@ width: 90%;}
     padding: 20px 0;
     font-weight: 700;
     font-size: 30px;
-    color: var(--white);
+    color: var(--black);
 }
 .pricing-cards{
     display: flex;
@@ -310,17 +575,11 @@ width: 90%;}
     margin: 100px 100px 60px;
 }
 .cards{
-    padding: 20px 20px 30px;
-    width: 255px;
-    height: 390px;
+    padding: 20px 40px;
+    width: 325px;
+    height: 395px;
     border-radius: 40px;
     background: var(--baby-blue);
-}
-.professionals{
-    margin-top: -35px;
-}
-.elite{
-    margin-top: -70px;
 }
 .plan-name{
     text-align: center;
@@ -339,7 +598,7 @@ width: 90%;}
 }
 .li-benefits{
     margin: 10px auto;
-    font-size: 16px;
+    font-size: 18px;
 }
 .li-benefits img{
     margin-right: 15px;
@@ -347,6 +606,7 @@ width: 90%;}
 .cards a{
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 .pricing-btn{
     font-weight: 700;
@@ -356,6 +616,58 @@ width: 90%;}
     border: none;
     padding: 10px 60px;
     border-radius: 10px;
+    width: 220px;
     cursor: pointer;
     margin-top: 20px;
+    transition: all 0.4s;
+}
+.pricing-btn:hover,
+.pricing-btn:focus{
+  box-shadow: 2px 4px 15px black;
+  transform: translateY(-0.35em)
+}
+
+/* Pricing Section Responsiveness - Mobile View */
+@media (max-width: 600px) {
+ 
+  .pricing-heading h1{
+    font-size: 20px;
+  }
+  .pricing-cards{
+    flex-direction: column;
+    margin: 40px 0 80px;
+    height: 950px;
+  }
+  .cards{
+    width: 245px;
+    height: 300px;
+    margin: 0 auto; 
+    border-radius: 25px;
+    padding: 20px 30px;
+  }
+  .plan-benefits{
+    margin-bottom: 10px;
+  }
+  .li-benefits{
+    margin: 5px auto;
+    font-size: 12px;
+  }
+  .li-benefits img{
+    height: 12px;
+  }
+  .plan-name{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .plan-duration{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .plan-duration span{
+    font-size: 12px;
+  }
+  .pricing-btn{
+    padding: 10px 20px;
+    width: 170px;
+  }
 }
