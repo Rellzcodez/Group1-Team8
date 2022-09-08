@@ -10,3 +10,10 @@ menu_hamburger.addEventListener('click', function(){
 })
 
 /* END */
+
+/* CAROUSEL TRACKER */
+// const carousel_track = document.querySelectorAll(".tracker");
+
+// carousel_track.addEventListener('click', function(){
+//     carousel_track.classList.toggle('active-track');
+// })
