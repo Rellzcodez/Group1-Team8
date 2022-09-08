@@ -396,6 +396,9 @@ html {
     font-size: 13px;
     font-weight: 700;
   }
+  .box a{
+    color: var(--black);
+  }
   .vr{
     height: 30px;
     display: block;
