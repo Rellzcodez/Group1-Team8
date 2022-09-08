@@ -17,7 +17,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+a{
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
 button {
   font-family: "Poppins", sans-serif;
 }
@@ -192,9 +195,7 @@ html {
   font-weight: 800;
 }
 .heading-btn a button:hover{
-  color:var(--white);
-  background: var(--denim-blue);
-  opacity: 90%;
+  color:var(--black);
   box-shadow: 2px 5px 15px var(--denim-blue);
   transform: scale(105%);
   margin-left: 15px;
@@ -230,22 +231,6 @@ html {
   .navigation{
     display: none;
   }
-  
-  .primary-header{
-    background: transparent;
-    height: 50px;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  #logo{
-    height: 50px;
-  }
-  .head-title{
-    color: var(--white);
-    padding: 12px;
-  }
   .hamburger{
     display: block;
     width: 30px;
@@ -266,7 +251,61 @@ html {
     margin: 4px 0;
     border: none;
     border-radius: 5px;
+    transition: .4s;
   }
+  .hamburger.active::before{
+    transform: rotate(-45deg) translate(-4px,3px);
+  }
+  .hamburger.active::after{
+      transform: rotate(45deg) translate(-5.5px,-5px);
+  }
+  .hamburger.active .hamburger-bar{
+      opacity: 0;
+  }
+  .navigation-hamburger{
+    position: fixed;
+    top: 8vh;
+    left: 100%;
+    margin: 0 10px;
+    width: 70%;
+    min-height: 40vh;
+    z-index: 98;
+    background: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    transition: 0.4s;
+  }
+  .navigation-hamburger.active{
+    left: 0;
+  }
+  .navigation-hamburger a{
+    color: var(--denim-blue);
+    transition: all .4s;
+  }
+  .navigation-hamburger a:hover,
+  .navigation-hamburger a:focus{
+    transform: scale(110%);
+  }
+  
+  .primary-header{
+    background: transparent;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #logo{
+    height: 50px;
+  }
+  .head-title{
+    color: var(--white);
+    padding: 12px;
+  }
+  
   /* Illustration-hero */
 
   .container-illustration{
@@ -669,5 +708,171 @@ width: 90%;}
   .pricing-btn{
     padding: 10px 20px;
     width: 170px;
+  }
+}
+
+/* THE LOCATION SESSION STARTS HERE  */
+.our-gym-studios {
+  text-align: center;
+  font-family: Poppins;
+  letter-spacing: 7px;
+  line-height: 60px;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  background-color: var(--baby-blue);
+}
+.gym-locations-container {
+  position: absolute;
+  height: 2010px;
+  margin: 32px;
+  border-radius: 40px;
+  background-color: #c8ffff;
+}
+.gym-studio-wraper-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #b4eff5;
+  position: relative;
+  margin: 34px 25px;
+}
+
+.dumbbell-logo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  background-color: #292d32;
+  width: 343px;
+  height: 82px;
+  margin: 10px 10px;
+  border-radius: 0 0 10px 0;
+}
+.lagos {
+  color: var(--white);
+  padding-top: 25px;
+}
+.dumbbell-logo {
+  background-color: #b4eff5;
+  width: 62px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.dumbbell-logo img {
+  width: 28.44px;
+  position: relative;
+  top: 18px;
+  left: 15px;
+}
+.lagos-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 10px;
+}
+.card {
+  position: relative;
+  background-color: #312e2e;
+  border-radius: 16px;
+  justify-content: center;
+  width: 396px;
+  height: 496px;
+}
+.image img {
+  width: 395.33px;
+  height: 273px;
+  padding: 10px;
+}
+.description {
+  font-family: poppins;
+  text-align: center;
+  color: var(--white);
+  font-size: 20px;
+  line-height: 36px;
+  width: 411px;
+  padding: 10px;
+}
+.book-a-session-btn{
+  display: flex;
+  justify-content: center;
+}
+.book-a-session {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: var(--baby-blue);
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-weight: 700;
+  padding: 11px 90px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .4s;
+}
+.book-a-session:hover,
+.book-a-session:focus{
+  box-shadow: 2px 4px 15px black;
+  transform: scale(105%);
+}
+/* THE LOCATION SESSION ENDS HERE  */
+
+/* LOCATION SESSION RESPONSIVENESS- MOBILE VIEW */
+@media (max-width: 600px) {
+  .our-gym-studios {
+    line-height: 60px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .gym-studio-wraper-1 {
+    margin: 15px;
+  }
+  .gym-locations-container {
+    position: absolute;
+    margin: 10px;
+    height: 4250px;
+  }
+  .dumbbell-logo-wrapper {
+    width: 250px;
+    height: 52px;
+    gap: 20px;
+
+  }
+
+  .lagos-card-wrapper {
+    flex-direction: column;
+  }
+  .card {
+    width: 296px;
+    height: 420px;
+  }
+  .image img {
+    width: 295px;
+    height: 240px;
+  }
+  .description {
+    position: relative;
+    font-size: 16px;
+    line-height: 25px;
+    width: 380px;
+    left: -40px;
+  }
+  .book-a-session a {
+    padding: 11px 50px;
+  }
+
+  .lagos {
+    padding-top: 13px;
+  }
+  .dumbbell-logo {
+    width: 34px;
+    /* margin: 10px; */
+  }
+  .dumbbell-logo img {
+    width: 26px;
+    top: 2px;
+    left: 5px;
   }
 }
