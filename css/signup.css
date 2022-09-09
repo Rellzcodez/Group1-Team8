@@ -105,7 +105,7 @@ form input:focus{
 
 .cta{position: relative; left: 270px; 
     position: relative; top: 20px;
-    font-weight: lighter;
+    font-weight: 300;
     padding-top: 3px;
 }
 
