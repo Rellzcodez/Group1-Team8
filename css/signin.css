@@ -112,3 +112,11 @@ button{
     font-weight: 700;
     text-decoration: none;
 }
+
+button:hover {
+    background-color: #858A9B;
+}
+
+a.lighthover:hover {
+    color: #C6C6C6;
+}
