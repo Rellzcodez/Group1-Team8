@@ -546,7 +546,7 @@ width: 90%;}
 
 
 /* Stay Fit */
-.stay-fit-container{
+.stay-fit-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -555,96 +555,144 @@ width: 90%;}
     rgb(180, 239, 245, 0.8),
     rgb(12, 21, 56)
   );
+  width: 100%;
   height: 702px;
   border-radius: 40px;
   margin: 33px 32px 34.75px 32px;
+  padding-top: 50px;
   overflow: hidden;
 }
-.stay-fit{
+
+.stay-fit-wrapper {
+  background-image: url(../images/Stay-fit.png);
+  background-repeat: no-repeat;
+  background-position: 768px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.stay-fit {
   font-family: "Poppins", sans-serif;
+  padding-left: 590px;
   color: var(--white);
-  padding-top: 63px;
-  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 7px;
+  letter-spacing: 9px;
+  height: 48px;
+}
+
+.BMI {
+  margin-left: 123px;
+  margin-right: 15px;
+}
+
+.know-your-bmi {
+  align-items: center;
+  padding: 60px 0 45px 200px;
+  padding-bottom: 55px;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .bmi_calculator {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  margin-left: 30px;
+}
+
+#your-weight, #your-height {
+  width: 595px;
+  height: 50px;
+  border: 1px solid var(--white);
+  background: var(--white);
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 #your-weight {
-  position: absolute;
-  width: 200px;
-  height: 70px;
-  margin: 291px 638px 0 108px;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: 0.5px solid rgb(66, 41, 41);
-  padding: 15px 24px;
-  font-size: 20px;
-  
+  margin-bottom: 55px;
 }
 
-#your-height{
-  position: absolute;
-  width: 200px;
-  height: 70px;
-  margin: 291px 638px 0 338px;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: 0.5px solid rgb(66, 41, 41);
-  padding: 15px 24px;
-  font-size: 20px;
+#your-height {
+  margin-bottom: 80px;
 }
 
 #calculate-bmi {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 24px;
-  gap: 6px;
-  position: absolute;
-  width: 160px;
+  color: var(--baby-blue);
+  background: var(--dark-grey);
+  width: 235px;
   height: 40px;
-  margin-left: 258px;
-  margin-top: 400px;
-  background: rgb(41, 45, 50);
-  color: #B4EFF5;
-  font-weight: 700;
-  font-size: 20px;
   border-radius: 10px;
-  
+  gap: 6px;
+  padding: 6px 24px 6px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 150px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
 #calculate-bmi:hover {
-  background: rgb(110, 155, 209);
-  cursor: pointer;
+  box-shadow: 2px 4px 15px black;
+  transform: translateY(-0.35em)
 }
 
-.stay-fit-wrapper{
-  display: flex;
-  justify-content: space-between;
-  gap: 130px;
-  width: 95%;
-}
+/* Stay-fit Responsiveness - Mobile View */
+@media (max-width: 600px) {
+  .stay-fit-container {
+    width: 100%;
+    align-items: center;
+    border-radius: 40px;
+  }
+  .stay-fit-wrapper {
+    background: url(../images/Stay-fit.png) 55px / 320px 650px
+    no-repeat;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .stay-fit {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .BMI {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .know-your-bmi {
+    width: max-content;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    margin: 60px 0px 20px 0px;
+  }
 
-.BMI{
-  position: absolute;
-  padding-top: 148px;
-  padding-left: 110px;
-  color: var(--white);
-  font-family: "Poppins", sans-serif;
-  font-size: 35px;
-  font-weight: 700;
-}
-.stay-fit-illustrator img{
-  height: 600px;
-  border-radius: 40px;
-  padding-right: 76.63px;
+  .bmi_calculator {
+    margin-left: 10px;
+  }
+  #your-weight, #your-height{
+    align-items: center;
+    border: none;
+    margin: 20px 10px 45px 0px;
+    width: 300px;
+  }
+  #calculate-bmi{
+    margin-left: 40px;
+  }
 }
 
 /* live session */
