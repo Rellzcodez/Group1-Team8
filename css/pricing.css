@@ -79,8 +79,7 @@ html {
   background: var(--baby-blue);
   width: 130px;
   height: 45px;
-  margin: 5px;
-  margin-right: 24px;
+  margin: 5px 24px 5px -20px;
   border-radius: 5px;
   border: 1px solid var(--light-grey);
   text-align: center;
@@ -267,7 +266,7 @@ html {
   .icons path{
     fill: var(--white);
   }
-  .icons-bottom{
+  .icons-mobile{
     display: none;
   }
   .navigation-footer{
@@ -320,18 +319,18 @@ html {
       justify-content: center;
       font-size: 12px;
     }
-    .icons-bottom{
+    .icons-mobile{
       margin: 10px 0;
       display: flex;
       justify-content: center;
     }
-    .icons-bottom a{
+    .icons-mobile a{
       margin: 0 10px;
     }
-    .icons-bottom svg{
+    .icons-mobile svg{
       height: 40px;
     }
-    .icons-bottom path{
+    .icons-mobile path{
       fill: var(--white);
     }
   }
