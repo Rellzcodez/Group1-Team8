@@ -576,7 +576,7 @@ form{
   margin-left: 123px;
   margin-right: 15px;
 }
-form h2{
+.know-your-bmi{
   align-items: center;
   padding: 60px 0 45px 200px;
   padding-bottom: 55px;
@@ -610,17 +610,26 @@ form h2{
 }
 
 .cal{
-  margin-left: 150px;
-}
-button{
   color: var(--baby-blue);
-  background-color: rgba(41, 45, 50, 1);
+  background: var(--dark-grey);
   width: 235px;
   height: 40px;
   border-radius: 10px;
   gap: 6px;
   padding: 6px 24px 6px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 200px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s;
 }
+
+.cal:hover{
+  box-shadow: 2px 4px 15px black;
+  transform: translateY(-0.35em)
+}
+
 
 /* Stay-fit Responsiveness - Mobile View */
 @media (max-width: 600px) {
@@ -651,7 +660,7 @@ button{
     margin: 20px;
   }
   
-  form h2{
+  .know-your-bmi{
     padding: 20px;
     text-align: center;
     align-items: center;
@@ -663,6 +672,7 @@ button{
   }
   .weight input, .height input{
     align-items: center;
+    border: none;
     margin: 20px 10px 0px 0px;
     width: 300px;
   }
