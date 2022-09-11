@@ -21,7 +21,7 @@ a{
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
-button {
+button, input {
   font-family: "Poppins", sans-serif;
 }
 
@@ -79,8 +79,7 @@ html {
   background: var(--baby-blue);
   width: 130px;
   height: 45px;
-  margin: 5px;
-  margin-right: 24px;
+  margin: 5px 5px 5px -20px;
   border-radius: 5px;
   border: 1px solid var(--light-grey);
   text-align: center;
@@ -234,6 +233,78 @@ html {
     }
 }
 
+/* NEWSLETTER */
+.newsletter{
+    background: 
+    linear-gradient(to bottom, 
+    rgba(41, 45, 50, 1), 
+    rgb(34, 47, 97));
+    color: var(--white);
+    padding: 45px 40px;
+    text-align: center;
+  }
+  .newsletter-hr{
+    width: 90%;
+    margin: 0 5% 40px;
+  }
+  .newsletter-heading{
+    margin-bottom: 20px;
+  }
+  .newsletter-p{
+    margin-bottom: 15px;
+  }
+  .newsletter-form-label{
+    margin-right: 20px;
+  }
+  .newsletter-form input{
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 420px;
+  }
+  .newsletter-form input:focus,
+  .newsletter-form input:hover{
+    outline: 1px solid var(--baby-blue);
+  }
+  .newsletter-btn{
+    padding: 4px 35px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    background: var(--baby-blue);
+    transition: all .8s;
+    font-weight: 600;
+  }
+  .newsletter-btn:hover,
+  .newsletter-btn:focus{
+    background: 
+    linear-gradient(
+      to right,
+      var(--denim-blue) 20%,
+      var(--baby-blue) 140%
+    );
+    color: var(--white);
+  }
+  
+  /* NEWSLETTER RESPONSIVENESS */
+  @media (max-width: 600px) {
+    .newsletter-heading{
+      font-size: 20px;
+    }
+    .newsletter-p,
+    .newsletter-form-label,
+    .newsletter-form input{
+      font-size: 13px;
+    }
+    .newsletter-form-label{
+      margin: 0;
+    }
+    .newsletter-form input{
+      width: 250px;
+    }
+  }
 
 /* FOOTER */
 
@@ -269,7 +340,7 @@ html {
   .icons path{
     fill: var(--white);
   }
-  .icons-bottom{
+  .icons-mobile{
     display: none;
   }
   .navigation-footer{
@@ -299,7 +370,7 @@ html {
   /* FOOTER RESPONSIVENESS */
   @media (max-width:600px) {
     .footer{
-      margin-top: 120px;
+      margin-top: 0px;
       height: 400px;
       background: rgb(28, 38, 80);
     }
@@ -322,18 +393,18 @@ html {
       justify-content: center;
       font-size: 12px;
     }
-    .icons-bottom{
+    .icons-mobile{
       margin: 10px 0;
       display: flex;
       justify-content: center;
     }
-    .icons-bottom a{
+    .icons-mobile a{
       margin: 0 10px;
     }
-    .icons-bottom svg{
+    .icons-mobile svg{
       height: 40px;
     }
-    .icons-bottom path{
+    .icons-mobile path{
       fill: var(--white);
     }
   }
