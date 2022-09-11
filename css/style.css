@@ -1008,11 +1008,11 @@ left: -10px;
     flex-direction: column;
   }
   .card {
-    width: 300px;
+    width: 320px;
     height: 490px;
   }
   .image img {
-    width: 300px;
+    width: 320px;
     height: 240px;
   }
   .description {
