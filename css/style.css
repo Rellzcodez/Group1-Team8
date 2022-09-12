@@ -930,10 +930,14 @@ left: -10px;
   justify-content: center;
   width: 418px;
   height: 669px;
+  transform: all;
+  transition: 0.10s;
+}
+.card:hover{
+  /* data-aos="fade-in" */
 }
 .image img {
   width: 419px;
-  /* height: 350px; */
   padding: 23px 10px 10px 10px;
 }
 .description {
