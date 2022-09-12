@@ -127,6 +127,8 @@ html {
   border-radius: 40px;
   margin: 0 32px 25px;
   overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 .heading-btn {
   background: url(../images/illustration-hero.png) right bottom / 573px 573px
@@ -209,8 +211,8 @@ html {
   margin: 0 5px;
 }
 .tracker.active-track {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: var(--baby-blue);
 }
 
@@ -530,21 +532,6 @@ html {
   }
 }
 
-
-.live-workout{margin: 10px 50px 10px 10px; 
-  position: relative; left: 50px;
-display: flex;
-  flex-direction: column;
-width: 90%;}
-.live{color: var(--white);
-  position: relative; bottom: 450px; 
-  width: 400px;
-  padding-left: 100px;
-  font-weight: 600;
-  text-align: center;
-}
-
-
 /* Stay Fit */
 .stay-fit-container{
   display: flex;
@@ -648,43 +635,67 @@ width: 90%;}
 }
 
 /* live session */
-#image-live-workout {
-  position: absolute;
+.live-Session-container{
+  background: url(../images/live-session-workout.png) no-repeat; 
+  margin: 0 30px 20px;
+  border-radius: 40px;
 }
   
 .overlay {
   position: relative;
-  margin: 0;
-  height: 10%;
-  width: 10%;
-  opacity: 1;
-  margin: 28px 32px 21px 32px;
-  border-radius: 40px;
-  width: 1376px;
+  width: 100%;
   height: 717px;
 }
   
 #fa-play {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   color: rgba(197, 23, 23, 1);
   font-size: 50px;
-  margin: 250px 584px 227px 552px;
   padding: 80px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
 }
 
 #live {
-  font-family: Poppins;
   text-align: center;
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
   position: absolute;
+  left: 15%;
+  top: 25%;
   width: 350px;
-  height: 60px;
-  margin: 206px 1023px 451px 43px;
+}
+
+/* LIVE SESSION RESPONSIVENESS */
+@media (max-width: 600px) {
+  .live-Session-container{
+    background: url(../images/live-session-workout.png) top center /
+    350px 200px no-repeat; 
+    margin: 0 15px 20px;
+    border-radius: 40px;
+  }
+  
+  .overlay{
+    text-align: center;
+    top: 15%;
+    height: 230px;
+  }
+  #fa-play{
+    font-size: 20px;
+    padding: 30px;
+  }
+  #live{
+    font-size: 20px;
+    width: 200px;
+    line-height: 25px;
+    top: 10%;
+    left: 18%;
+  }
 }
 
 
