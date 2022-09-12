@@ -157,27 +157,7 @@ h2{
     .password input:focus:placeholder-shown {
         box-shadow: 0 0 0 4px #AECFFF;
     }
-    /* Validation */
-.email i { 
-    position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   right: 20px;
-   color: #9B9B9B;
-   pointer-events: none;
-}
-.password i {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   right: 20px;
-   color: #9B9B9B;
-   pointer-events: none;
-}
-.container .help-text {
-   font-size: 12px;
-   color: #9B9B9B;
-}
+    
 
 form input:not([type='checkbox']) {
     border: 1px solid #D9D9D9;
@@ -207,26 +187,24 @@ span{
     font-weight: 700;
     font-size: 16px;
 }
-span a:hover{
-    color: #858A9B;
-}
-.btn-submit {
-    padding: 12px 0;
+button{
+    background-color: #B4EFF5;
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
     width: 400px;
+    height: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+.btn a{
     color: #000;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all .3s ease;
-    border: none;
+    text-decoration: none;
+    padding: 7px 149px;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    font-weight: 500;
-    background: #B4EFF5;
-    margin-bottom: 20px;
-    }
-    .btn-submit:hover{
-        color: #fff;
-        background: #343C59;
-    }
+    font-weight: 700;
+    Line-height: 48px;
+}
 
 .signup{
     text-align: center;
@@ -237,8 +215,9 @@ span a:hover{
     font-weight: 700;
     text-decoration: none;
 }
-.signup a:hover{
-    color: #858A9B
+
+button:hover {
+    background-color: #858A9B;
 }
 
 a.lighthover:hover {

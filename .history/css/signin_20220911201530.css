@@ -207,9 +207,7 @@ span{
     font-weight: 700;
     font-size: 16px;
 }
-span a:hover{
-    color: #858A9B;
-}
+span a:hover
 .btn-submit {
     padding: 12px 0;
     width: 400px;
@@ -225,7 +223,7 @@ span a:hover{
     }
     .btn-submit:hover{
         color: #fff;
-        background: #343C59;
+        background: #858A9B;
     }
 
 .signup{
