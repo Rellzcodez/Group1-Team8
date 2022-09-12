@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/signin.css">
+    <title>SIGN IN</title>
+</head> 
+ <body>
+    <div class="form-container">
+     <h1 class="heading">Welcome back!</h1> 
+    <form action="action_page.php" class="login active" method="post">
+       
+        <h2 class="heading">Sign In</h2>
+     <div class="container">
+        <div class="email">
+            <input type="email" placeholder="Email Address" name="email" required>
+            <i class='bx bx-envelope'></i>
+        </div>
+        <div class="password">
+            <input type="password" pattern=".{8,}" id="password" placeholder="Your password" required>
+            <i class='bx bx-lock-alt' ></i>
+        </div>
+        <span class="help-text">At least 8 characters</span>
+        </div>
+    
+        <div class="container2">
+            <p>Forgotten Password? <span><a href="#">CLICK HERE</a></span></p>
+                <div class="checkbox">
+                <input type="checkbox" name="remember"> Remember me
+                </div>
+               </div>
+        <div class="btn">
+            <button type="submit" class="btn-submit"><b><a href="#">Sign In</a></b></button>
+        </div>
+        <div class="signup">
+            <p>Don't have an account? <span><a href="/pages/signup.html" onclick="switchForm('login', event)">SIGN UP</a></span></p>
+        </div>
+     </form>
+    </div>
+    <script src="signin.js"></script>
+</body> 
+ </html>  

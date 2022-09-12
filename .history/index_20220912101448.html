@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="A description of the page and its contents"
+        />
+        <title>Fit-A-Goal | Landing Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="css/style.css" />  
+    </head>
+  
+    <body>
+        <header class="primary-header">
+            <nav class="navbar">
+                <img src="images/fit-a-goal-logo.svg" alt="Fit-A-Goal" id="logo">
+                <div class="navigation">
+                    <div class="primary-nav">
+                        <ul class="nav-links">
+                            <li class="home-nav-link"><a href="#">HOME</a></li>
+                            <li class="other-nav-link"><a href="pages/">CHOOSE US</a></li>
+                            <li class="other-nav-link"><a href="#">PROGRAM</a></li>
+                            <li class="other-nav-link"><a href="pages/pricing.html">PRICING</a></li>
+                            <li class="other-nav-link"><a href="pages/support.html">SUPPORT</a></li>
+                        </ul>
+                    </div>
+                    <div class="register-login">
+                        <ul class="nav-secondary-links">
+                            <li><a href="pages/signup.html">SIGN UP</a></li>
+                            <li><a href="pages/signin.html">SIGN IN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="head-title">F I T - A - G O A L</div>
+            <button class="hamburger" title="Menu">
+                <div class="hamburger-bar"></div>
+            </button>
+            <div class="navigation-hamburger">
+                <!-- <a href="index.html">HOME</a>
+                <a href="/pages/choose_us.html" target="_blank" title=>CHOOSE US</a> -->
+                <a href="#">HOME</a>
+                <a href="pages/choose_us.html">CHOOSE US</a>
+                <a href="#" >PROGRAM</a>
+                <a href="pages/pricing.html" >PRICING</a>
+                <a href="pages/support.html" >SUPPORT</a>
+            </div>
+        </header>
+        <main class="landing-page-body">
+            
+        <!-- THE ILLUSTRATION SEGMENT -->
+            <div class="container-illustration">
+                <div class="heading-btn slide" id="slide-1">
+                    <div>
+                    <h1 class="primary-heading">Once you learn to <span>quit</span>, 
+                    it becomes a <span>habit</span></h1>
+                    <a href="#"><button class="get-started">GET STARTED</button></a>
+                    </div>
+                </div>
+                <div class="slide" id="slide-2">
+                    
+                </div>
+                <div class="slide" id="slide-3">
+                    
+                </div>
+                <div class="slide" id="slide-4">
+                    
+                </div>
+                <div class="slide" id="slide-5">
+                    
+                </div>
+                <div class="slide" id="slide-6">
+                    
+                </div>
+                <div class="slide" id="slide-7">
+                    
+                </div>
+                <div class="slide" id="slide-8">
+                    
+                </div>
+            </div>
+            <div class="carousel-circle">
+                <a href="#slide-1">
+                    <div class="tracker"></div></a>
+                <a href="#slide-2">
+                    <div class="tracker"></div>
+                </a><a href="#slide-3">
+                    <div class="tracker"></div>
+                </a><a href="#slide-4">
+                    <div class="tracker"></div>
+                </a><a href="#slide-5">
+                    <div class="tracker"></div>
+                </a><a href="#slide-6">
+                    <div class="tracker"></div>
+                </a><a href="#slide-7">
+                    <div class="tracker"></div>
+                </a><a href="#slide-8">
+                    <div class="tracker"></div>
+                </a>
+            </div>
+            <div class="mobile-registration">
+                <div class="box"><a href="pages/signup.html">SIGN UP</a></div>
+                <div class="vr"></div>
+                <div class="box"><a href="pages/signin.html">SIGN IN</a></div>
+            </div>
+
+        <!-- THE SESSION SEGMENT -->
+        <div>
+            <section class="session-container">
+                <label class="session-lable" for="section"><h3>OUR SESSIONS</h3></label>
+                <div class="session-wrapper">
+                    <div class="body-building-wrapper">
+                        <div class="body-building session-item" >
+                        </div>
+                    <label class="body-building-lable" for="body building"><h3>BODY BUILDING</h3></label>
+                    </div>
+                
+                    <div class="muscle-gain-wrapper">
+                        <div class="muscle-gain session-item">
+                        </div>
+                    <label class="muscle-gain-label" for="muscle gain"><h3>MUSCLE GAIN</h3></label>
+                    </div>   
+
+                    <div class="weight-loss-wrapper">
+                        <div class="weight-loss session-item">
+                        </div>
+                    <label class="weight-loss-label" for="weight loss"><h3>MUSCLE GAIN</h3></label>
+                    </div>   
+        
+                </div>
+             <label class="see-all-session-lable" for="section"><a href="#"><u>see all sessions <span class="arrow-vector"><img src="images/arrow-vector.png" alt="arrow" width="20px"></span></u></a></label>
+
+    
+            </section>
+        </div>
+
+        </main>
+
+        <!-- THE STAY FIT SESSION STARTS HERE -->
+        <section class="stay-fit-container">
+            <h3 class="stay-fit">STAY FIT</h3>
+            <div class="stay-fit-wrapper">
+              <div class="BMI">
+                <h2 class="know-your-bmi">KNOW YOUR B.M.I.</h2>
+                <div class="bmi-inputs">
+                  <input
+                    type="text"
+                    name="weight"
+                    placeholder="Your weight"
+                    class="weight"
+                  />
+                  <input
+                    type="text"
+                    name="height"
+                    placeholder="Your height"
+                    class="height"
+                  />
+                </div>
+                <div class="bmi-btn-wrapper">
+                  <button class="bmi-calculate-btn">Calculate</button>
+                </div>
+              </div>
+              <div class="stay-fit-illustrator">
+                <img src="images/Stay-fit.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <!-- THE STAY FIT SESSION ENDS HERE -->
+
+
+    <!-- THE LIVE WORKOUT SESSION STARTS HERE -->
+
+    <div class="live-Session-container">            
+        
+         <div class="overlay">
+            <img src="../images/live-session-workout.png" alt="live-session-workout" id="image-live-workout">
+            <h2 id="live">LIVE WORKOUT SESSION</h2>
+            <i class="fa-sharp fa-solid fa-play" id="fa-play"></i>          
+        </div>
+    </div>
+    
+
+        <!-- THE LIVE WORKOUT SESSION ENDS HERE -->
+
+        
+        <!-- THE PRICING SECTION STARTS HERE -->
+
+        <div class="pricing">
+            <div class="pricing-heading"><h1>PRICING</h1></div>
+            <div class="pricing-cards">
+                <div class="cards fade-in">
+                    <h2 class="plan-name">STANDARD</h2>
+                    <h3 class="plan-duration">3 MONTHS<span>($30/Month)</span></h3>
+                    <ul class="plan-benefits">
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="20px">Free Riding</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="20px">Unlimited Equipments</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="20px">Personal Trainer</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="20px">Weight Lifting Classes</li>
+                    </ul>
+                    <a href="#"><button class="pricing-btn">Join Now</button></a>
+                </div>
+                <div class="cards fade-in professionals">
+                    <h2 class="plan-name">GOLD</h2>
+                    <h3 class="plan-duration">6 MONTHS<span>($26/Month)</span></h3>
+                    <ul class="plan-benefits">
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="18px">Free Riding +</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="18px">Unlimited Equipments +</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="18px">Personal Trainer +</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="18px">Weight Lifting Classes +</li>
+                    </ul>
+                    <a href="#"><button class="pricing-btn">Join Now</button></a>
+                </div>
+                <div class="cards fade-in elite">
+                    <h2 class="plan-name">PREMIUM</h2>
+                    <h3 class="plan-duration">12 MONTHS<span>($21/Month)</span></h3>
+                    <ul class="plan-benefits">
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="20px">Free Riding ++</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="20px">Unlimited Equipments++</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="20px">Personal Trainer ++</li>
+                        <li class="li-benefits"><img src="images/checked.svg" alt="" height="20px">Weight Lifting Classes ++</li>
+                    </ul>
+                    <a href="#"><button class="pricing-btn">Join Now</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- THE PRICING SECTION ENDS HERE -->
+
+        <!-- THE LOCATION SESSION STARTS HERE -->
+<div class="our-gym-studios"><h3>OUR GYM STUDIOS</h3></div> 
+<section class="gym-locations-container">
+    <div class="gym-studio-wraper-1">
+        <div class="dumbbell-logo-wrapper">
+          <div class="dumbbell-logo">
+            <img src="images/gym-dumbbell.png" alt="dumbbell-logo" />
+          </div>
+          <div class="lagos"><h3>LAGOS</h3></div>
+        </div>
+        <div class="lagos-card-wrapper">
+          <div class="card">
+            <div class="image">
+              <img src="images/gym-studio-leki-lagos.png" alt="gym studio" />
+            </div>
+            <div class="description">
+              The gym studio LEKI, Lagos, connect with an Instructor now to book
+              a session.
+            </div>
+            <div class="book-a-session-btn special">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="images/gym-studio-ikoyi-lagos.png" alt="gym studio" />
+            </div>
+            <div class="description">
+              The gym studio IKOYI, Lagos, connect with an Instructor now to
+              book a session.
+            </div>
+            <div class="book-a-session-btn special">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img
+                src="images/gym-studio-victoria-island-lagos.png"
+                alt="gym studio"
+              />
+            </div>
+            <div class="description">
+              The gym studio Victoria Island, Lagos, connect with an Instructor
+              now to book a session.
+            </div>
+            <div class="book-a-session-btn">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- studio wrapper 2 -->
+      <div class="gym-studio-wraper-1">
+        <div class="dumbbell-logo-wrapper">
+          <div class="dumbbell-logo">
+            <img src="images/gym-dumbbell.png" alt="dumbbell-logo" />
+          </div>
+          <div class="lagos"><h3>ABUJA</h3></div>
+        </div>
+        <div class="lagos-card-wrapper">
+          <div class="card">
+            <div class="image">
+              <img src="images/gym-studio-wuse-abuja.png" alt="gym studio" />
+            </div>
+            <div class="description">
+              The gym studio Wuse, Abuja. Connect with an Instructor now to book
+              a session.
+            </div>
+            <div class="book-a-session-btn special">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="images/gym-studio-maitama-abuja.png" alt="gym studio" />
+            </div>
+            <div class="description">
+              The gym studio Maidiama, Abuja. Connect with an Instructor now to
+              book a session.
+            </div>
+            <div class="book-a-session-btn special">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="images/gym-studio-asokoro-abuja.png" alt="gym studio" />
+            </div>
+            <div class="description">
+              The gym studio Asokoro, Abuja. Connect with an Instructor now to
+              book a session.
+            </div>
+            <div class="book-a-session-btn special">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- studio wrapper 3 -->
+      <div class="gym-studio-wraper-1">
+        <div class="dumbbell-logo-wrapper">
+          <div class="dumbbell-logo">
+            <img src="images/gym-dumbbell.png" alt="dumbbell-logo" />
+          </div>
+          <div class="lagos"><h3>PORT HARCOURT</h3></div>
+        </div>
+        <div class="lagos-card-wrapper">
+          <div class="card">
+            <div class="image">
+              <img
+                src="images/gym-studio-bonny-island-portharcut.png"
+                alt="gym studio"
+              />
+            </div>
+            <div class="description">
+              The gym studio Bonny Island, Port harcut. Connect with an
+              Instructor now to book a session.
+            </div>
+            <div class="book-a-session-btn">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img
+                src="images/gym-studio-abobiri-portharcut.png"
+                alt="gym studio"
+              />
+            </div>
+            <div class="description">
+              The gym studio Abobiri, Port harcut. Connect with an Instructor
+              now to book a session.
+            </div>
+            <div class="book-a-session-btn">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img
+                src="images/gym-studio-g-r-a-phase 1-portharcut.png"
+                alt="gym studio"
+              />
+            </div>
+            <div class="description">
+              The gym studio G-R-A Phase 1, Port harcut. Connect with an
+              Instructor now to book a session.
+            </div>
+            <div class="book-a-session-btn">
+              <a href="#"
+                ><button class="book-a-session">Book a session</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="get-started">
+        <a href="#"> <button class="get-started-btn">GET STARTED</button> </a>
+      </div>
+
+</section>
+<!-- THE LOCATION SESSION ENDS HERE -->
+
+<!-- NEWSLETTER -->
+
+    <hr class="newsletter-hr">
+    <div class="newsletter">
+        <h1 class="newsletter-heading">STAY IN TOUCH WITH US</h1>
+        <p class="newsletter-p">Subscribe to our newsletters, fitness and health updates</p>
+        <form class="newsletter-form">
+            <label for="Email" class="newsletter-form-label">Email Address:</label>
+            <input type="email" title="Email" id="email" placeholder="Enter your email address">
+        </form>
+        <a href="#"><button class="newsletter-btn">SUBSCRIBE</button></a>
+    </div>
+
+<!-- NEWSLETTER ENDS -->
+
+
+        <footer class="footer">
+            <div class="footer-mc">
+                <div class="footer-title-icons">
+                    <div class="footer-title">
+                        <img src="images/footer-logo.svg" alt="Fit-A-Goal" height="120px">
+                        <header>F I T - A - G O A L</header>
+                    </div>
+                    <div class="icons">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" viewBox="0 0 21 20"><path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/></svg></a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" viewBox="0 0 21 20"><path d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" fill="currentColor" viewBox="0 0 21 20"><path d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"/></svg></a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="navigation-footer">
+                    <a href="#">HOME</a>
+                    <a href="#" >CHOOSE US</a>
+                    <a href="#" >PROGRAM</a>
+                    <a href="pages/pricing.html" >PRICING</a>
+                    <a href="pages/support.html" >SUPPORT</a>
+                </div>
+            </div>
+            <div class="icons-bottom">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 21 20"><path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/></svg></a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="currentColor" viewBox="0 0 21 20"><path fill="#FFF" d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="currentColor" viewBox="0 0 21 20"><path fill="#FFF" d="M20.667 2.797a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0014.513.873c-2.649 0-4.595 2.472-3.997 5.038a11.648 11.648 0 01-8.457-4.287 4.109 4.109 0 001.27 5.478A4.086 4.086 0 011.47 6.59c-.045 1.901 1.317 3.68 3.29 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.834 2.85 8.25 8.25 0 01-6.075 1.7 11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.662-12.205a8.354 8.354 0 002.048-2.124z"/></svg></a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg></a>
+            </div>
+            <div class="copyright">
+                <small>&copy; 2022 - TECHATHON 1.0 | GROUP 1 TEAM 8</small>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

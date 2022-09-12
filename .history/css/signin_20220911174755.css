@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    align-items: center;
+    place-items: center;
+    min-height: 100vh;
+
+}
+
+.form-container{
+    background: rgba(255, 255, 255, 0.82);
+     border: 1px solid #AEB1BD;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    margin: 2% auto;
+    width: 1000px;
+    height: 600px;
+}
+h1, h2, .btn{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 52px;
+}
+h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px; 
+}
+
+.container, .container2{
+    width: 700px;
+    margin: 0 150px 0 150px;
+}
+.email, .password{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    width: 700px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    color: #858A9B;
+}
+.email{
+    margin-bottom: 42px;
+}
+.password{
+    margin-bottom: 24px;
+}
+form input:not([type='checkbox']) {
+    border: 1px solid #D9D9D9;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 2px;
+    display: inline;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container2 a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+span{
+    font-weight: 700;
+    font-size: 16px;
+}
+button{
+    background-color: #B4EFF5;
+    border: 1px solid #C6C6C6;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+.btn a{
+    color: #000;
+    text-decoration: none;
+    padding: 7px 149px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    Line-height: 48px;
+}
+
+.signup{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.signup a{
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #858A9B;
+}
+
+a.lighthover:hover {
+    color: #C6C6C6;
+}

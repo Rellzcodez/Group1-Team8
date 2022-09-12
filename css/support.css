@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+:root {
+  --white: rgb(255 255 255);
+  --denim-blue: rgb(12, 21, 56);
+  --baby-blue: rgb(180, 239, 245);
+  --black: rgb(0, 0, 0);
+  --light-grey: rgb(206, 208, 215);
+  --dark-grey: rgba(41, 45, 50, 1);
+
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+button, input {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  background: var(--denim-blue);
+}
+
+
+.primary-header {
+  padding: 0 32px 0 36px;
+}
+#logo {
+  height: 159px;
+}
+.navbar {
+  display: flex;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+}
+.navigation {
+  display: flex;
+  margin: 60px 0 40px 25px;
+}
+.primary-nav {
+  width: 808px;
+  height: 55px;
+  background: var(--white);
+  border-radius: 5px;
+  margin-right: 45px;
+}
+.nav-links {
+  display: flex;
+  padding: 0;
+}
+.other-nav-link:nth-child(1){
+    margin-left: 40px;
+}
+.other-nav-link {
+  margin: 15px 50px 10px 0;
+}
+.other-nav-link a{
+  transition: all 0.4s;
+}
+.other-nav-link a:hover{
+  color: rgb(11, 197, 218);
+}
+.support-nav-link {
+  background: var(--baby-blue);
+  width: 130px;
+  height: 45px;
+  margin: 5px 5px 5px -20px;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  text-align: center;
+  padding: 7px 0;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.support-nav-link:hover{
+  background: transparent;
+  border: 3px solid var(--denim-blue);
+}
+.register-login {
+  width: 255px;
+  height: 55px;
+  background: var(--white);
+  border-radius: 5px;
+  padding: 0 31px;
+}
+.register-login a{
+  transition: all 0.4s;
+}
+.register-login a:hover{
+  color: rgb(11, 197, 218);
+}
+.nav-secondary-links {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.head-title,
+.hamburger,
+.navigation-hamburger{
+    display: none;
+}
+
+/* Navbar Responsiveness */
+@media (max-width: 600px) {
+    .head-title,
+    .hamburger,
+    .mobile-registration{
+      display: initial;
+    }
+    .navigation{
+      display: none;
+    }
+    .hamburger{
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: var(--baby-blue);
+      border: none;
+      border-radius: 10px;
+      padding: 0px 5px;
+      margin: 10px 15px 10px 0;
+    }
+    .hamburger-bar,
+    .hamburger::before,
+    .hamburger::after{
+      content: "";
+      display: block;
+      height: 2px;
+      background: var(--black);
+      margin: 4px 0;
+      border: none;
+      border-radius: 5px;
+      transition: .4s;
+    }
+    .hamburger.active::before{
+      transform: rotate(-45deg) translate(-4px,3px);
+    }
+    .hamburger.active::after{
+        transform: rotate(45deg) translate(-5.5px,-5px);
+    }
+    .hamburger.active .hamburger-bar{
+        opacity: 0;
+    }
+    .navigation-hamburger{
+      position: fixed;
+      top: 8vh;
+      left: 100%;
+      margin: 0 7.5%;
+      width: 85%;
+      min-height: 60vh;
+      z-index: 98;
+      background: var(--white);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 0;
+      transition: 0.4s;
+    }
+    .navigation-hamburger.active{
+      left: 0;
+    }
+    .navigation-links a{
+        color: var(--denim-blue);
+        font-weight: 700;
+        transition: all .4s;
+      }
+      .navigation-links a::before,
+      .navigation-links a::after{
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: var(--dark-grey);
+          display: block;
+          transition: all .4s;
+      }
+      .navigation-links a::before{
+          margin-bottom: 10px;
+      }
+      .navigation-links a::after{
+          margin-top: 10px;
+      }
+      .navigation-links a:hover,
+      .navigation-links a:focus{
+        transform: scale(100%);
+      }
+      .profile{
+        display: flex;
+        justify-content: center;
+      }
+      .profile button{
+        font-size: 18px;
+        font-weight: 700;
+        padding: 5px 20px;
+        background: var(--baby-blue);
+        color: var(--black);
+        transition: all .4s;
+      }
+      .profile button:hover,
+      .profile button:focus{
+        transform: scaleZ(90%);
+      }
+    
+    .primary-header{
+      background: transparent;
+      height: 50px;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    #logo{
+      height: 50px;
+    }
+    .head-title{
+      color: var(--white);
+      padding: 12px;
+    }
+}
+
+/* NEWSLETTER */
+.newsletter{
+    background: 
+    linear-gradient(to bottom, 
+    rgba(41, 45, 50, 1), 
+    rgb(34, 47, 97));
+    color: var(--white);
+    padding: 45px 40px;
+    text-align: center;
+  }
+  .newsletter-hr{
+    width: 90%;
+    margin: 0 5% 40px;
+  }
+  .newsletter-heading{
+    margin-bottom: 20px;
+  }
+  .newsletter-p{
+    margin-bottom: 15px;
+  }
+  .newsletter-form-label{
+    margin-right: 20px;
+  }
+  .newsletter-form input{
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    width: 420px;
+  }
+  .newsletter-form input:focus,
+  .newsletter-form input:hover{
+    outline: 1px solid var(--baby-blue);
+  }
+  .newsletter-btn{
+    padding: 4px 35px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    background: var(--baby-blue);
+    transition: all .8s;
+    font-weight: 600;
+  }
+  .newsletter-btn:hover,
+  .newsletter-btn:focus{
+    background: 
+    linear-gradient(
+      to right,
+      var(--denim-blue) 20%,
+      var(--baby-blue) 140%
+    );
+    color: var(--white);
+  }
+  
+  /* NEWSLETTER RESPONSIVENESS */
+  @media (max-width: 600px) {
+    .newsletter-heading{
+      font-size: 20px;
+    }
+    .newsletter-p,
+    .newsletter-form-label,
+    .newsletter-form input{
+      font-size: 13px;
+    }
+    .newsletter-form-label{
+      margin: 0;
+    }
+    .newsletter-form input{
+      width: 250px;
+    }
+  }
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    top: 100%;
+    bottom: 0;
+    height: 250px;
+    padding: 20px 45px;
+    background: url(../images/illustration-hero.png) 920px 10px / 350px 350px no-repeat rgb(28, 38, 80);
+  }
+  .footer-mc{
+    display: flex;
+  }
+  .footer-title{
+    display: flex;
+  }
+  .footer-title header{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 45px 0 0 10px;
+    color: var(--white);
+  }
+  .icons{
+    margin: 0;
+  }
+  .icons a{
+    margin: 0 5px;
+  }
+  .icons svg{
+    height: 40px;
+  }
+  .icons path{
+    fill: var(--white);
+  }
+  .icons-mobile{
+    display: none;
+  }
+  .navigation-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 150px;
+    margin: 30px 0 0 200px;
+  }
+  .navigation-footer a{
+    margin: 10px 40px;
+    font-weight: 500;
+    color: var(--denim-blue);
+  }
+  .navigation-footer a:hover,
+  .navigation-footer a:focus,
+  .icons path:hover,
+  .icons path:focus{
+    color: rgb(99, 206, 218);
+    fill: rgb(99, 206, 218);
+  }
+  footer small,
+  .navigation-footer a{
+    color: var(--white);
+  }
+  
+  /* FOOTER RESPONSIVENESS */
+  @media (max-width:600px) {
+    .footer{
+      margin-top: 0px;
+      height: 400px;
+      background: rgb(28, 38, 80);
+    }
+    .footer-mc{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .icons{
+      display: none;
+    }
+    .navigation-footer{
+      margin: 0;
+      justify-content: center;
+    }
+    .navigation-footer a{
+      margin: 10px 20px;
+    }
+    .copyright small{
+      display: flex;
+      justify-content: center;
+      font-size: 12px;
+    }
+    .icons-mobile{
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .icons-mobile a{
+      margin: 0 10px;
+    }
+    .icons-mobile svg{
+      height: 40px;
+    }
+    .icons-mobile path{
+      fill: var(--white);
+    }
+  }

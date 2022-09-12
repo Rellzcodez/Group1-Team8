@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+:root {
+  --white: rgb(255 255 255);
+  --denim-blue: rgb(12, 21, 56);
+  --baby-blue: rgb(180, 239, 245);
+  --black: rgb(0, 0, 0);
+  --light-grey: rgb(206, 208, 215);
+  --dark-grey: rgba(41, 45, 50, 1);
+
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  background: var(--denim-blue);
+}
+
+.primary-header {
+  padding: 0 32px 0 36px;
+}
+#logo {
+  height: 159px;
+}
+.navbar {
+  display: flex;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+}
+.navigation {
+  display: flex;
+  margin: 60px 0 40px 25px;
+}
+.primary-nav {
+  width: 808px;
+  height: 55px;
+  background: var(--white);
+  border-radius: 5px;
+  margin-right: 45px;
+}
+.nav-links {
+  display: flex;
+  padding: 0;
+}
+.other-nav-link {
+  margin: 15px 60px 10px 0;
+}
+.home-nav-link {
+  background: var(--baby-blue);
+  width: 130px;
+  height: 45px;
+  margin: 5px;
+  margin-right: 24px;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  text-align: center;
+  padding: 10px 0;
+}
+.register-login {
+  width: 255px;
+  height: 55px;
+  background: var(--white);
+  border-radius: 5px;
+  padding: 0 31px;
+}
+.nav-secondary-links {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Illustration Hero */
+.container-illustration {
+  display: flex;
+  background-image: linear-gradient(
+    to right,
+    rgb(180, 239, 245, 0.8),
+    rgb(12, 21, 56)
+  );
+  height: 650px;
+  border-radius: 40px;
+  margin: 0 32px 25px;
+}
+.heading-btn {
+  background: url(../images/illustration-hero.png) right bottom / 613px 613px
+    no-repeat;
+  width: 100%;
+  padding-left: 140px;
+}
+.primary-heading {
+  font-size: 75px;
+  width: 48%;
+  color: var(--white);
+  line-height: 100px;
+  margin: 96px 0 49px;
+}
+.primary-heading span {
+  text-decoration: underline;
+  color: var(--baby-blue);
+}
+.heading-btn a button {
+  background: var(--baby-blue);
+  border-radius: 10px;
+  padding: 10px 132px;
+  border: none;
+  cursor: pointer;
+}
+.get-started {
+  font-size: 16px;
+  font-weight: 800;
+}
+.carousel-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.tracker {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--light-grey);
+  cursor: pointer;
+  margin: 0 5px;
+}
+.active-track {
+  width: 20px;
+  height: 20px;
+  background: var(--baby-blue);
+}
+/* Sesseion */
+.session-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 57em;
+  background-color: var(--baby-blue);
+  margin: 36px 32px;
+  border-radius: 40px;
+  font-family: Poppins;
+}
+.session-lable {
+  position: relative;
+  padding-top: 50px;
+  font-weight: 700px;
+}
+.session-wrapper {
+  display: flex;
+  gap: 42px;
+  margin: 49px 46px;
+}
+.session-item {
+  width: 25em;
+  height: 37.5em;
+  border-radius: 40px;
+
+}
+/* body-building and weight loss*/
+.body-building-wrapper,.weight-loss-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.body-building-lable,.weight-loss-label {
+  margin-top: 32px;
+  font-weight: 700;
+}
+/* See all session */
+.see-all-session-lable a:active{
+  font-weight: 700;
+  color: var(--black);
+}
+.see-all-session-lable a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+.see-all-session-lable{
+  font-weight: 700;
+}
+
+.arrow-vector{
+  margin-left: 2px;
+}
+/* muscle-gain */
+.muscle-gain-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.muscle-gain-label{
+  margin: 32px;
+}
+
+/* Styling of Session Ends Here */
+.live-workout{margin: 10px 50px 10px 10px; 
+  position: relative; left: 50px;
+display: flex;
+  flex-direction: column;
+width: 90%;}
+.live{color: var(--white);
+  position: relative; bottom: 450px; 
+  width: 400px;
+  padding-left: 100px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/* Stay Fit */
+.stay-fit-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(180, 239, 245, 0.8),
+    rgb(12, 21, 56)
+  );
+  height: 702px;
+  border-radius: 40px;
+  margin: 33px 32px 34.75px 32px;
+  overflow: hidden;
+}
+.stay-fit{
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  padding-top: 63px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.stay-fit-wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+  width: 95%;
+}
+
+.BMI{
+  padding-top: 28px;
+  padding-left: 140px;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.stay-fit-illustrator img{
+  height: 600px;
+  border-radius: 40px;
+  padding-right: 76.63px;
+}
+
+/* live session */
+.live-workout{
+  mar
+}
+
+/* Pricing Session */
+
+.pricing-heading{
+    background: var(--dark-grey);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.pricing-heading h1{
+    margin: 0 auto;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--white);
+}
+.pricing-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px 60px;
+}
+.cards{
+    padding: 20px 20px 30px;
+    width: 255px;
+    height: 390px;
+    border-radius: 40px;
+    background: var(--baby-blue);
+}
+.professionals{
+    margin-top: -35px;
+}
+.elite{
+    margin-top: -70px;
+}
+.plan-name{
+    text-align: center;
+}
+.plan-duration{
+    margin: 10px auto 40px;
+    text-align: center;
+}
+.plan-duration span{
+    font-size: 15px;
+    margin-left: 5px;
+}
+.plan-benefits{
+    list-style: none;
+    margin-bottom: 22px;
+}
+.li-benefits{
+    margin: 10px auto;
+    font-size: 16px;
+}
+.li-benefits img{
+    margin-right: 15px;
+}
+.cards a{
+    display: flex;
+    justify-content: center;
+}
+.pricing-btn{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--baby-blue);
+    background: var(--dark-grey);
+    border: none;
+    padding: 10px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}

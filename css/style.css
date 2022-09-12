@@ -17,8 +17,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-button {
+a{
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+button, input {
   font-family: "Poppins", sans-serif;
 }
 
@@ -26,6 +29,7 @@ html {
   font-family: "Poppins", sans-serif;
   background: var(--denim-blue);
 }
+
 
 .primary-header {
   padding: 0 32px 0 36px;
@@ -62,6 +66,12 @@ html {
 .other-nav-link {
   margin: 15px 60px 10px 0;
 }
+.other-nav-link a{
+  transition: all 0.4s;
+}
+.other-nav-link a:hover{
+  color: rgb(11, 197, 218);
+}
 .home-nav-link {
   background: var(--baby-blue);
   width: 130px;
@@ -71,7 +81,13 @@ html {
   border-radius: 5px;
   border: 1px solid var(--light-grey);
   text-align: center;
-  padding: 10px 0;
+  padding: 7px 0;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.home-nav-link:hover{
+  background: transparent;
+  border: 3px solid var(--denim-blue);
 }
 .register-login {
   width: 255px;
@@ -80,10 +96,23 @@ html {
   border-radius: 5px;
   padding: 0 31px;
 }
+.register-login a{
+  transition: all 0.4s;
+}
+.register-login a:hover{
+  color: rgb(11, 197, 218);
+}
 .nav-secondary-links {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
+}
+.head-title,
+.hamburger,
+.navigation-hamburger,
+.mobile-registration,
+.mobile-get-started{
+  display: none;
 }
 
 /* Illustration Hero */
@@ -94,22 +123,54 @@ html {
     rgb(180, 239, 245, 0.8),
     rgb(12, 21, 56)
   );
-  height: 650px;
+  height: 600px;
   border-radius: 40px;
   margin: 0 32px 25px;
+  overflow: hidden;
 }
 .heading-btn {
-  background: url(../images/illustration-hero.png) right bottom / 613px 613px
+  background: url(../images/illustration-hero.png) right bottom / 573px 573px
     no-repeat;
   width: 100%;
   padding-left: 140px;
 }
+.slide{
+  height: 600px;
+  width: 1305px;
+  margin: 0 auto;
+  flex-shrink: 0;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  position: relative;
+}
+#slide-2{
+  background: url(../images/slide-2.jpg) no-repeat;
+}
+#slide-3{
+  background: url(../images/slide-3.jpg) no-repeat;
+}
+#slide-4{
+  background: url(../images/slide-4.jpg) no-repeat;
+}
+#slide-5{
+  background: url(../images/slide-5.jpg) no-repeat;
+}
+#slide-6{
+  background: url(../images/slide-6.jpg) no-repeat;
+}
+#slide-7{
+  background: url(../images/slide-7.jpg) no-repeat;
+}
+#slide-8{
+  background: url(../images/slide-8.jpg) no-repeat;
+}
+
 .primary-heading {
-  font-size: 75px;
+  font-size: 70px;
   width: 48%;
   color: var(--white);
   line-height: 100px;
-  margin: 96px 0 49px;
+  margin: 56px 0 49px;
 }
 .primary-heading span {
   text-decoration: underline;
@@ -121,10 +182,17 @@ html {
   padding: 10px 132px;
   border: none;
   cursor: pointer;
+  transition: all .4s;
 }
 .get-started {
   font-size: 16px;
   font-weight: 800;
+}
+.heading-btn a button:hover{
+  color:var(--black);
+  box-shadow: 2px 5px 15px var(--denim-blue);
+  transform: scale(105%);
+  margin-left: 15px;
 }
 .carousel-circle {
   display: flex;
@@ -140,37 +208,244 @@ html {
   cursor: pointer;
   margin: 0 5px;
 }
-.active-track {
+.tracker.active-track {
   width: 20px;
   height: 20px;
   background: var(--baby-blue);
 }
+
+/* Navigation and Illustration Hero Responsiveness - Mobile View */
+@media (max-width: 600px) {
+  .head-title,
+  .hamburger,
+  .mobile-registration,
+  .mobile-get-started{
+    display: initial;
+  }
+  .navigation{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: var(--baby-blue);
+    border: none;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 10px 15px 10px 0;
+  }
+  .hamburger-bar,
+  .hamburger::before,
+  .hamburger::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--black);
+    margin: 4px 0;
+    border: none;
+    border-radius: 5px;
+    transition: .4s;
+  }
+  .hamburger.active::before{
+    transform: rotate(-45deg) translate(-4px,3px);
+  }
+  .hamburger.active::after{
+      transform: rotate(45deg) translate(-5.5px,-5px);
+  }
+  .hamburger.active .hamburger-bar{
+      opacity: 0;
+  }
+  .navigation-hamburger{
+    position: fixed;
+    top: 8vh;
+    left: 100%;
+    margin: 0 7.5%;
+    width: 85%;
+    min-height: 40vh;
+    z-index: 98;
+    background: var(--white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    transition: 0.4s;
+  }
+  .navigation-hamburger.active{
+    left: 0;
+  }
+  .navigation-hamburger a{
+    color: var(--denim-blue);
+    font-weight: 700;
+    transition: all .4s;
+  }
+  .navigation-hamburger a::before,
+  .navigation-hamburger a::after{
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: var(--dark-grey);
+      display: block;
+      transition: all .4s;
+  }
+  .navigation-hamburger a::before{
+      margin-bottom: 10px;
+  }
+  .navigation-hamburger a::after{
+      margin-top: 10px;
+  }
+  .navigation-hamburger a:hover,
+  .navigation-hamburger a:focus{
+    transform: scale(100%);
+  }
+  
+  .primary-header{
+    background: transparent;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #logo{
+    height: 50px;
+  }
+  .head-title{
+    color: var(--white);
+    padding: 12px;
+  }
+  
+  /* Illustration-hero */
+
+  .container-illustration{
+    margin: 0 0 35px;
+    border-radius: 0 0 40px 40px;
+    height: 428px;
+  }
+  .heading-btn{
+    background: url(../images/illustration-hero.png) 35px bottom 
+    / 315px 315px no-repeat;
+    padding: 0;
+    text-align: center;
+  }
+  .slide{
+    height: 428px;
+    width: 100%;
+    transition: all 0.4s;
+  }
+  #slide-2{
+    background: url(../images/slide-2.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-3{
+    background: url(../images/slide-3.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-4{
+    background: url(../images/slide-4.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-5{
+    background: url(../images/slide-5.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-6{
+    background: url(../images/slide-6.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-7{
+    background: url(../images/slide-7.jpg) center / 520px 450px no-repeat;
+  }
+  #slide-8{
+    background: url(../images/slide-8.jpg) center / 520px 450px no-repeat;
+  }
+
+  .primary-heading {
+    font-size: 28px;
+    width: 90%;
+    color: var(--white);
+    line-height: initial;
+    margin: 0 auto;
+    padding: 30px 0 100px;
+  }
+  .heading-btn a button{
+    display: none;
+  }
+  .mobile-get-started{
+    position: absolute;
+    left: auto;
+    top: 460px;
+    width: 210px;
+    background: var(--baby-blue);
+    border-radius: 10px;
+    padding: 10px 38px;
+    border: none;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .carousel-circle{
+    margin-bottom: 37px;
+  }
+  .tracker{
+    width: 5px;
+    height: 5px;
+    margin: 0 3px;
+  }
+  .active-track{
+    width: 10px;
+    height: 10px;
+  }
+  .mobile-registration{
+    background: var(--baby-blue);
+    height: 50px;
+    display: flex;
+  }
+  .box{
+    width: 50%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .box a{
+    color: var(--black);
+  }
+  .vr{
+    height: 30px;
+    display: block;
+    width: 1px;
+    background: var(--black);
+    margin: 10px 0;
+  }
+}
+#slide-2,#slide-3,#slide-4,#slide-5,
+#slide-6,#slide-7,#slide-8{
+  background-size: cover;
+  background-position: top center;
+}
+
 /* Sesseion */
 .session-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 57em;
+  height: 49em;
   background-color: var(--baby-blue);
   margin: 36px 32px;
   border-radius: 40px;
-  font-family: Poppins;
 }
 .session-lable {
   position: relative;
   padding-top: 50px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 .session-wrapper {
   display: flex;
-  gap: 42px;
-  margin: 49px 46px;
+  gap: 65px;
+  margin: 20px 0;
 }
 .session-item {
-  width: 25em;
-  height: 37.5em;
+  width: 22em;
+  height: 32em;
   border-radius: 40px;
-
+  transition: all .4s;
 }
 /* body-building and weight loss*/
 .body-building-wrapper,.weight-loss-wrapper {
@@ -180,9 +455,28 @@ html {
 
 }
 .body-building-lable,.weight-loss-label {
-  margin-top: 32px;
+  margin-top: 25px;
   font-weight: 700;
 }
+.body-building{
+  background: url(../images/body-building-sess.png) top center;
+}
+.weight-loss{
+  background: url(../images/weight-loss-sess.png) top center;
+}
+/* muscle-gain */
+.muscle-gain-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.muscle-gain{
+  background: url(../images/muscle-gain-sess.png) center;
+}
+.muscle-gain-label{
+  margin-top: 25px;
+}
+
 /* See all session */
 .see-all-session-lable a:active{
   font-weight: 700;
@@ -200,27 +494,241 @@ html {
 .arrow-vector{
   margin-left: 2px;
 }
-/* muscle-gain */
-.muscle-gain-wrapper{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-}
-
-.muscle-gain-label{
-  margin: 32px;
+.session-item:hover,
+.session-item:focus{
+  box-shadow: 2px 4px 15px rgb(0, 0, 0, .8);
+  transform: translateY(-10px);
 }
 
 /* Styling of Session Ends Here */
 
+/* Our Sessions Responsiveness - Mobile View */
+@media (max-width: 600px) {
+  .session-container{
+    width: 100%;
+    margin: 60px 0;
+    height: 105em;
+    padding: 0 40px;
+  }
+  .session-wrapper{
+    flex-direction: column;
+  }
+  .session-item{
+    width: 20em;
+    height: 25em;
+    margin-top: 10px;
+  }
+  .body-building-lable,.weight-loss-label,
+  .muscle-gain-label{
+    margin-top: 15px;
+  }
+  .muscle-gain,
+  .body-building,
+  .weight-loss{
+    background-position: top center;
+  }
+}
 
+
+.live-workout{margin: 10px 50px 10px 10px; 
+  position: relative; left: 50px;
+display: flex;
+  flex-direction: column;
+width: 90%;}
+.live{color: var(--white);
+  position: relative; bottom: 450px; 
+  width: 400px;
+  padding-left: 100px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/* Stay Fit */
+.stay-fit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(180, 239, 245, 0.8),
+    rgb(12, 21, 56)
+  );
+  border-radius: 40px;
+  margin: 33px 32px 34.75px 32px;
+  overflow: hidden;
+}
+.stay-fit {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  margin-top:  63px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.stay-fit-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.know-your-bmi{
+  position: relative;
+  padding-left: 140px;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+.bmi-btn-wrapper{
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+  
+}
+.bmi-calculate-btn{
+  background-color: #292D32;
+  color: #B4EFF5;
+  border: none;
+  padding: 11px 60px;
+  border-radius: 10px;
+  font-weight: 700;
+  transform: all;
+  transition: 0.4s;
+}
+.bmi-calculate-btn:hover,
+.bmi-calculate-btn:active{
+  box-shadow: 2px 4px 15px black;
+  transform: scale(1.05);
+  
+}
+.stay-fit-illustrator img {
+  position: relative;
+  width: 569.37px;
+  padding: 20px;
+  top: -40px;
+}
+.bmi-inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 55px;
+  margin-top: 45px;
+}
+.weight,.height{
+  position: relative;
+  width: 595px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 75px;
+
+}
+/* STAY FIT MOBIL VIEW */
+@media (max-width:600px) {
+  .stay-fit-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: (2, 1fr);
+}
+.stay-fit {
+margin-top: 10px;
+font-size: 16px;
+}
+/* grid one */
+.stay-fit-illustrator{
+  grid-row: 1;
+
+}
+.stay-fit-illustrator img {
+  width: 370px;
+  padding: 20px;
+  top: -10px;
+}
+/* gris two */
+.BMI{
+  grid-row: 2;
+}
+.know-your-bmi{
+  font-size: 16px;
+  top: -40px;
+left: -40px;
+}
+
+.height,.weight{
+  width: 250px;
+  height: 50px;
+  left: 60px;
+  top: -50px;
+
+}
+.bmi-btn-wrapper{
+top: -90px;
+left: -10px;
+}
+.stay-fit-container {
+  background-image: linear-gradient(
+    to top right,
+    rgb(180, 239, 245, 0.8),
+    rgb(12, 21, 56)
+  );
+  margin: 33px 10px 34.75px 10px;
+
+}
+
+
+  }
+
+/* live session */
+#image-live-workout {
+  position: absolute;
+}
+  
+.overlay {
+  position: relative;
+  margin: 0;
+  height: 10%;
+  width: 10%;
+  opacity: 1;
+  margin: 28px 32px 21px 32px;
+  border-radius: 40px;
+  width: 1376px;
+  height: 717px;
+}
+  
+#fa-play {
+  position: absolute;
+  color: rgba(197, 23, 23, 1);
+  font-size: 50px;
+  margin: 250px 584px 227px 552px;
+  padding: 80px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 100%;
+}
+
+#live {
+  font-family: Poppins;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  width: 350px;
+  height: 60px;
+  margin: 206px 1023px 451px 43px;
+}
 
 
 /* Pricing Session */
 
 .pricing-heading{
-    background: var(--dark-grey);
+    background: var(--baby-blue);
     display: flex;
     text-align: center;
     align-items: center;
@@ -230,25 +738,28 @@ html {
     padding: 20px 0;
     font-weight: 700;
     font-size: 30px;
-    color: var(--white);
+    color: var(--black);
 }
 .pricing-cards{
     display: flex;
     justify-content: space-between;
-    margin: 100px 100px 60px;
+    margin: 80px 100px 60px;
 }
 .cards{
-    padding: 20px 20px 30px;
-    width: 255px;
-    height: 390px;
+    padding: 20px 40px;
+    width: 325px;
+    height: 395px;
     border-radius: 40px;
     background: var(--baby-blue);
+    transition: all .4s;
 }
-.professionals{
-    margin-top: -35px;
+.cards:nth-child(2),
+.cards:nth-child(3){
+  padding: 20px 30px;
 }
-.elite{
-    margin-top: -70px;
+.cards:hover,
+.cards:focus{
+  transform: scale(105%);
 }
 .plan-name{
     text-align: center;
@@ -267,7 +778,7 @@ html {
 }
 .li-benefits{
     margin: 10px auto;
-    font-size: 16px;
+    font-size: 18px;
 }
 .li-benefits img{
     margin-right: 15px;
@@ -275,6 +786,7 @@ html {
 .cards a{
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 .pricing-btn{
     font-weight: 700;
@@ -284,6 +796,443 @@ html {
     border: none;
     padding: 10px 60px;
     border-radius: 10px;
+    width: 220px;
     cursor: pointer;
     margin-top: 20px;
+    transition: all 0.4s;
+}
+.pricing-btn:hover,
+.pricing-btn:focus{
+  box-shadow: 2px 4px 15px black;
+  transform: translateY(-0.35em)
+}
+
+/* Pricing Section Responsiveness - Mobile View */
+@media (max-width: 600px) {
+ 
+  .pricing-heading h1{
+    font-size: 20px;
+  }
+  .pricing-cards{
+    flex-direction: column;
+    margin: 40px 0 80px;
+    height: 950px;
+  }
+  .cards{
+    width: 245px;
+    height: 300px;
+    margin: 0 auto; 
+    border-radius: 25px;
+    padding: 20px 30px;
+  }
+  .plan-benefits{
+    margin-bottom: 10px;
+  }
+  .li-benefits{
+    margin: 5px auto;
+    font-size: 12px;
+  }
+  .li-benefits img{
+    height: 12px;
+  }
+  .plan-name{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .plan-duration{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .plan-duration span{
+    font-size: 12px;
+  }
+  .pricing-btn{
+    padding: 10px 20px;
+    width: 170px;
+  }
+}
+
+/* THE LOCATION SESSION STARTS HERE  */
+.our-gym-studios {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 7px;
+  line-height: 60px;
+  font-weight: 700;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  background-color: var(--baby-blue);
+}
+.gym-locations-container {
+  position: relative;
+  height: 2664px;
+  margin: 27px ;
+  border-radius: 40px 40px 0 0;
+  background-color: #c8ffff;
+}
+.gym-studio-wraper-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #b4eff5;
+  position: relative;
+  margin: 0 0 34px 0;
+  border-radius: 40px 40px 0 0;
+}
+.dumbbell-logo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  background-color: #292d32;
+  width: 343px;
+  height: 82px;
+  margin: 30px 23px;
+  border-radius: 0 0 10px 0;
+}
+.lagos {
+  color: var(--white);
+  padding-top: 25px;
+}
+.dumbbell-logo {
+  background-color: #b4eff5;
+  width: 62px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.dumbbell-logo img {
+  width: 28.44px;
+  position: relative;
+  top: 18px;
+  left: 15px;
+}
+.lagos-card-wrapper {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+}
+.card {
+  position: relative;
+  background-color: #312e2e;
+  border-radius: 16px;
+  justify-content: center;
+  width: 418px;
+  height: 669px;
+}
+.image img {
+  width: 419px;
+  height: 300px;
+  padding: 23px 10px 10px 10px;
+}
+.description {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: var(--white);
+  font-size: 20px;
+  line-height: 36px;
+  width: 245px;
+  padding: 30px;
+  left: 75px;
+}
+.book-a-session-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.book-a-session {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: var(--baby-blue);
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: 700;
+  padding: 11px 90px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.book-a-session:hover,
+.book-a-session:focus {
+  box-shadow: 2px 4px 15px black;
+  transform: scale(105%);
+}
+.special {
+  top: 30px;
+}
+.get-started {
+  position: relative;
+  text-align: center;
+}
+.get-started-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  background-color: #292d32;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 3px;
+  padding: 0.8em 34em;
+  border-radius: 0 0 10px 10px;
+  transition: all 0.4s;
+}
+.get-started-btn:hover {
+  box-shadow: 2px 4px 15px black;
+  transform: scale(1.05);
+}
+/* THE LOCATION SESSION ENDS HERE  */
+
+/* LOCATION SESSION RESPONSIVENESS- MOBILE VIEW */
+@media (max-width: 600px) {
+  .our-gym-studios {
+    line-height: 60px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .gym-studio-wraper-1 {
+    margin: 0 0 15px 0;
+  }
+  .gym-locations-container {
+    margin: 10px;
+    height: 4970px;
+  }
+  .dumbbell-logo-wrapper {
+    width: 250px;
+    height: 52px;
+    gap: 20px;
+  }
+  .lagos-card-wrapper {
+    flex-direction: column;
+  }
+  .card {
+    width: 320px;
+    height: 490px;
+  }
+  .image img {
+    width: 320px;
+    height: 240px;
+  }
+  .description {
+    position: relative;
+    font-size: 16px;
+    line-height: 25px;
+    width: 250px;
+    padding: 50px;
+    top: -50px;
+    left: 25px;
+  }
+  .book-a-session-btn {
+    position: relative;
+    top: -95px;
+  }
+  .special {
+    top: -70px;
+  }
+
+  .book-a-session {
+    padding: 11px 30px;
+  }
+
+  .lagos {
+    padding-top: 13px;
+  }
+  .dumbbell-logo {
+    width: 34px;
+    /* margin: 10px; */
+  }
+  .dumbbell-logo img {
+    width: 26px;
+    top: 2px;
+    left: 5px;
+  }
+  .get-started {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .get-started-btn {
+    padding: 0.6em 7em;
+  }
+
+}
+
+/* NEWSLETTER */
+.newsletter{
+  background: 
+  linear-gradient(to bottom, 
+  rgba(41, 45, 50, 1), 
+  rgb(34, 47, 97));
+  color: var(--white);
+  padding: 45px 40px;
+  text-align: center;
+}
+.newsletter-hr{
+  width: 90%;
+  margin: 0 5% 40px;
+}
+.newsletter-heading{
+  margin-bottom: 20px;
+}
+.newsletter-p{
+  margin-bottom: 15px;
+}
+.newsletter-form-label{
+  margin-right: 20px;
+}
+.newsletter-form input{
+  font-size: 16px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  width: 420px;
+}
+.newsletter-form input:focus,
+.newsletter-form input:hover{
+  outline: 1px solid var(--baby-blue);
+}
+.newsletter-btn{
+  padding: 4px 35px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  background: var(--baby-blue);
+  transition: all .8s;
+  font-weight: 600;
+}
+.newsletter-btn:hover,
+.newsletter-btn:focus{
+  background: 
+  linear-gradient(
+    to right,
+    var(--denim-blue) 20%,
+    var(--baby-blue) 140%
+  );
+  color: var(--white);
+}
+
+/* NEWSLETTER RESPONSIVENESS */
+@media (max-width: 600px) {
+  .newsletter-heading{
+    font-size: 20px;
+  }
+  .newsletter-p,
+  .newsletter-form-label,
+  .newsletter-form input{
+    font-size: 13px;
+  }
+  .newsletter-form-label{
+    margin: 0;
+  }
+  .newsletter-form input{
+    width: 250px;
+  }
+}
+
+/* FOOTER */
+
+.footer{
+  position: relative;
+  top: 100%;
+  bottom: 0;
+  height: 250px;
+  padding: 20px 45px;
+  background: url(../images/illustration-hero.png) 920px 10px / 350px 350px no-repeat rgb(28, 38, 80);
+}
+.footer-mc{
+  display: flex;
+}
+.footer-title{
+  display: flex;
+}
+.footer-title header{
+  font-size: 20px;
+  font-weight: 500;
+  padding: 45px 0 0 10px;
+  color: var(--white);
+}
+.icons{
+  margin: 0;
+}
+.icons a{
+  margin: 0 5px;
+}
+.icons svg{
+  height: 40px;
+}
+.icons path{
+  fill: var(--white);
+  transition: all .2s;
+}
+.icons-bottom{
+  display: none;
+}
+.navigation-footer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+  margin: 30px 0 0 200px;
+}
+.navigation-footer a{
+  margin: 10px 40px;
+  font-weight: 500;
+  color: var(--denim-blue);
+  transition: all .2s;
+}
+.navigation-footer a:hover,
+.navigation-footer a:focus,
+.icons path:hover,
+.icons path:focus{
+  color: rgb(99, 206, 218);
+  fill: rgb(99, 206, 218);
+}
+footer small,
+.navigation-footer a{
+  color: var(--white);
+}
+
+/* FOOTER RESPONSIVENESS */
+@media (max-width:600px) {
+  .footer{
+    margin-top: 0px;
+    height: 400px;
+    background: rgb(28, 38, 80);
+  }
+  .footer-mc{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .icons{
+    display: none;
+  }
+  .navigation-footer{
+    margin: 0;
+    justify-content: center;
+  }
+  .navigation-footer a{
+    margin: 10px 20px;
+  }
+  .copyright small{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .icons-bottom{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .icons-bottom a{
+    margin: 0 10px;
+  }
+  .icons-bottom svg{
+    height: 40px;
+  }
+  .icons-bottom path{
+    fill: var(--white);
+  }
 }
