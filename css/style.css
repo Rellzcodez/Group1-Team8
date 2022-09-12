@@ -716,7 +716,7 @@ width: 90%;}
 /* THE LOCATION SESSION STARTS HERE  */
 .our-gym-studios {
   text-align: center;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 7px;
   line-height: 60px;
   font-weight: 700;
@@ -785,7 +785,7 @@ width: 90%;}
   padding: 10px;
 }
 .description {
-  font-family: poppins;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   color: var(--white);
   font-size: 20px;
