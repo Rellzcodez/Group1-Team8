@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+:root {
+  --white: rgb(255 255 255);
+  --denim-blue: rgb(12, 21, 56);
+  --baby-blue: rgb(180, 239, 245);
+  --black: rgb(0, 0, 0);
+  --light-grey: rgb(206, 208, 215);
+  --dark-grey: rgba(41, 45, 50, 1);
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--denim-blue);
+}
+/* Header */
+/* .fade-in {
+  opacity: 1;
+  transition: opacity 450ms ease-in-out;
+}
+.fade-in.appear {
+  opacity: 1;
+} */
+
+.primary-header {
+  padding: 0 32px 0 36px;
+}
+#logo {
+  height: 159px;
+}
+.navbar {
+  display: flex;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 700;
+}
+.navigation {
+  display: flex;
+  margin: 60px 0 40px 25px;
+}
+.primary-nav {
+  width: 808px;
+  height: 55px;
+  background: var(--white);
+  border-radius: 5px;
+  margin-right: 45px;
+}
+.nav-links {
+  display: flex;
+  padding: 0;
+}
+.other-nav-link {
+  margin: 15px 60px 10px 0;
+}
+.other-nav-link a {
+  transition: all 0.4s;
+}
+.other-nav-link a:hover {
+  color: rgb(11, 197, 218);
+}
+.home{
+  margin-left: 50px;
+}
+.current {
+  background: var(--baby-blue);
+  width: 130px;
+  height: 45px;
+  margin: 5px 35px 5px -20px;
+  border-radius: 5px;
+  border: 1px solid var(--light-grey);
+  text-align: center;
+  padding: 7px 0;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.current:hover {
+  background: transparent;
+  border: 3px solid var(--denim-blue);
+}
+.register-login {
+  width: 255px;
+  height: 55px;
+  background: var(--white);
+  border-radius: 5px;
+  padding: 0 31px;
+}
+.register-login a {
+  transition: all 0.4s;
+}
+.register-login a:hover {
+  color: rgb(11, 197, 218);
+}
+.nav-secondary-links {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.head-title,
+.hamburger,
+.navigation-hamburger,
+.mobile-registration,
+.mobile-get-started {
+  display: none;
+}
