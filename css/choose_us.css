@@ -262,6 +262,20 @@ html {
     color: rgba(255, 255, 255, 1);
     margin: 105px 799px 489px 150px;
 }
+.choose{font-family: 'Poppins';
+font-style: normal;
+font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+color: rgba(255, 255, 255, 1);
+position: relative; bottom: 470px ;
+position: relative;
+  left: 15px;}
 
 .your-fitness-companion {
     background: linear-gradient(to right, rgba(180, 239, 245, 1), rgba(132, 175, 185, 1), rgba(81, 107, 121, 1), rgba(43, 56, 73, 1), rgba(18, 23, 42, 1));
@@ -289,6 +303,21 @@ html {
     display: flex;
     align-items: center;
     text-align: center;
+}
+.motivation{
+  font-family: 'Poppins';
+    font-style: normal;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    position: relative; left: 50px;
 }
 
 .affordable-cost {
