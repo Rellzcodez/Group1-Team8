@@ -546,7 +546,7 @@ width: 90%;}
 
 
 /* Stay Fit */
-.stay-fit-container{
+.stay-fit-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -555,97 +555,134 @@ width: 90%;}
     rgb(180, 239, 245, 0.8),
     rgb(12, 21, 56)
   );
-  height: 702px;
   border-radius: 40px;
   margin: 33px 32px 34.75px 32px;
   overflow: hidden;
 }
-.stay-fit{
+.stay-fit {
   font-family: "Poppins", sans-serif;
   color: var(--white);
-  padding-top: 63px;
+  margin-top:  63px;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 7px;
 }
 
-.bmi_calculator {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-#your-weight {
-  position: absolute;
-  width: 200px;
-  height: 70px;
-  margin: 291px 638px 0 108px;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: 0.5px solid rgb(66, 41, 41);
-  padding: 15px 24px;
-  font-size: 20px;
-  
-}
-
-#your-height{
-  position: absolute;
-  width: 200px;
-  height: 70px;
-  margin: 291px 638px 0 338px;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
-  border: 0.5px solid rgb(66, 41, 41);
-  padding: 15px 24px;
-  font-size: 20px;
-}
-
-#calculate-bmi {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 24px;
-  gap: 6px;
-  position: absolute;
-  width: 160px;
-  height: 40px;
-  margin-left: 258px;
-  margin-top: 400px;
-  background: rgb(41, 45, 50);
-  color: #B4EFF5;
-  font-weight: 700;
-  font-size: 20px;
-  border-radius: 10px;
-  
-}
-
-#calculate-bmi:hover {
-  background: rgb(110, 155, 209);
-  cursor: pointer;
-}
-
-.stay-fit-wrapper{
+.stay-fit-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 130px;
-  width: 95%;
 }
-
-.BMI{
-  position: absolute;
-  padding-top: 148px;
-  padding-left: 110px;
+.know-your-bmi{
+  position: relative;
+  padding-left: 140px;
   color: var(--white);
   font-family: "Poppins", sans-serif;
   font-size: 35px;
   font-weight: 700;
+  margin-top: 50px;
 }
-.stay-fit-illustrator img{
-  height: 600px;
-  border-radius: 40px;
-  padding-right: 76.63px;
+.bmi-btn-wrapper{
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+  
 }
+.bmi-calculate-btn{
+  background-color: #292D32;
+  color: #B4EFF5;
+  border: none;
+  padding: 11px 60px;
+  border-radius: 10px;
+  font-weight: 700;
+  transform: all;
+  transition: 0.4s;
+}
+.bmi-calculate-btn:hover,
+.bmi-calculate-btn:active{
+  box-shadow: 2px 4px 15px black;
+  transform: scale(1.05);
+  
+}
+.stay-fit-illustrator img {
+  position: relative;
+  width: 569.37px;
+  padding: 20px;
+  top: -40px;
+}
+.bmi-inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 55px;
+  margin-top: 45px;
+}
+.weight,.height{
+  position: relative;
+  width: 595px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 75px;
+
+}
+/* STAY FIT MOBIL VIEW */
+@media (max-width:600px) {
+  .stay-fit-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: (2, 1fr);
+}
+.stay-fit {
+margin-top: 10px;
+font-size: 16px;
+}
+/* grid one */
+.stay-fit-illustrator{
+  grid-row: 1;
+
+}
+.stay-fit-illustrator img {
+  width: 370px;
+  padding: 20px;
+  top: -10px;
+}
+/* gris two */
+.BMI{
+  grid-row: 2;
+}
+.know-your-bmi{
+  font-size: 16px;
+  top: -40px;
+left: -40px;
+}
+
+.height,.weight{
+  width: 250px;
+  height: 50px;
+  left: 60px;
+  top: -50px;
+
+}
+.bmi-btn-wrapper{
+top: -90px;
+left: -10px;
+}
+.stay-fit-container {
+  background-image: linear-gradient(
+    to top right,
+    rgb(180, 239, 245, 0.8),
+    rgb(12, 21, 56)
+  );
+  margin: 33px 10px 34.75px 10px;
+
+}
+
+
+  }
 
 /* live session */
 #image-live-workout {
@@ -818,7 +855,7 @@ width: 90%;}
 /* THE LOCATION SESSION STARTS HERE  */
 .our-gym-studios {
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 7px;
   line-height: 60px;
   font-weight: 700;
@@ -827,10 +864,10 @@ width: 90%;}
   background-color: var(--baby-blue);
 }
 .gym-locations-container {
-  height: 2150px;
-  margin: 32px;
-  padding: 30px 0;
-  border-radius: 40px;
+  position: relative;
+  height: 2664px;
+  margin: 27px ;
+  border-radius: 40px 40px 0 0;
   background-color: #c8ffff;
 }
 .gym-studio-wraper-1 {
@@ -838,9 +875,9 @@ width: 90%;}
   flex-direction: column;
   background-color: #b4eff5;
   position: relative;
-  margin: 34px 25px;
+  margin: 0 0 34px 0;
+  border-radius: 40px 40px 0 0;
 }
-
 .dumbbell-logo-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -848,7 +885,7 @@ width: 90%;}
   background-color: #292d32;
   width: 343px;
   height: 82px;
-  margin: 10px 10px;
+  margin: 30px 23px;
   border-radius: 0 0 10px 0;
 }
 .lagos {
@@ -869,8 +906,7 @@ width: 90%;}
 }
 .lagos-card-wrapper {
   display: flex;
-  justify-content: space-between;
-  gap: 18px;
+  gap: 10px;
   margin: 10px;
 }
 .card {
@@ -878,24 +914,27 @@ width: 90%;}
   background-color: #312e2e;
   border-radius: 16px;
   justify-content: center;
-  width: 396px;
-  height: 496px;
+  width: 418px;
+  height: 669px;
 }
 .image img {
-  width: 395.33px;
-  height: 273px;
-  padding: 10px;
+  width: 419px;
+  height: 300px;
+  padding: 23px 10px 10px 10px;
 }
 .description {
-  font-family: 'Poppins', sans-serif;
+  position: relative;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   color: var(--white);
   font-size: 20px;
   line-height: 36px;
-  width: 411px;
-  padding: 10px;
+  width: 245px;
+  padding: 30px;
+  left: 75px;
 }
-.book-a-session-btn{
+.book-a-session-btn {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -904,7 +943,7 @@ width: 90%;}
   margin-top: 20px;
   text-decoration: none;
   background-color: var(--baby-blue);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: black;
   font-weight: 700;
   padding: 11px 90px;
@@ -912,32 +951,36 @@ width: 90%;}
   border: none;
   font-size: 14px;
   cursor: pointer;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 .book-a-session:hover,
-.book-a-session:focus{
+.book-a-session:focus {
   box-shadow: 2px 4px 15px black;
   transform: scale(105%);
 }
-.gym-locations-container .get-started{
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 10px 0;
-  width: 1000px;
-  border-radius: 0 0 10px 10px;
-  border: none;
-  background: var(--dark-grey);
+.special {
+  top: 30px;
+}
+.get-started {
+  position: relative;
+  text-align: center;
+}
+.get-started-btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   color: var(--white);
-  font-size: 18px;
+  text-decoration: none;
+  background-color: #292d32;
+  border: none;
   cursor: pointer;
-  transition: all .4s;
+  letter-spacing: 3px;
+  padding: 0.8em 34em;
+  border-radius: 0 0 10px 10px;
+  transition: all 0.4s;
 }
-.gym-locations-container .get-started span{
-  margin-right: 10px;
-}
-.gym-locations-container .get-started:hover{
-  font-size: 20px;
+.get-started-btn:hover {
+  box-shadow: 2px 4px 15px black;
+  transform: scale(1.05);
 }
 /* THE LOCATION SESSION ENDS HERE  */
 
@@ -949,41 +992,48 @@ width: 90%;}
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
   .gym-studio-wraper-1 {
-    margin: 15px;
+    margin: 0 0 15px 0;
   }
   .gym-locations-container {
     margin: 10px;
-    height: 4350px;
+    height: 4970px;
   }
   .dumbbell-logo-wrapper {
     width: 250px;
     height: 52px;
     gap: 20px;
-
   }
-
   .lagos-card-wrapper {
     flex-direction: column;
   }
   .card {
-    width: 296px;
-    height: 420px;
+    width: 320px;
+    height: 490px;
   }
   .image img {
-    width: 295px;
+    width: 320px;
     height: 240px;
   }
   .description {
     position: relative;
     font-size: 16px;
     line-height: 25px;
-    width: 380px;
-    left: -40px;
+    width: 250px;
+    padding: 50px;
+    top: -50px;
+    left: 25px;
   }
-  .book-a-session a {
-    padding: 11px 50px;
+  .book-a-session-btn {
+    position: relative;
+    top: -95px;
+  }
+  .special {
+    top: -70px;
+  }
+
+  .book-a-session {
+    padding: 11px 30px;
   }
 
   .lagos {
@@ -998,13 +1048,15 @@ width: 90%;}
     top: 2px;
     left: 5px;
   }
-  .gym-locations-container .get-started{
-    width: 80%;
-    font-size: 13px;
+  .get-started {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
-  .gym-locations-container .get-started:focus{
-    font-size: 16px;
+  .get-started-btn {
+    padding: 0.6em 7em;
   }
+
 }
 
 /* NEWSLETTER */
