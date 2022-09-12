@@ -126,7 +126,7 @@ span{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 550px; 
+    right: 20px; 
     color: #9B9B9B;
     pointer-events: none;
     

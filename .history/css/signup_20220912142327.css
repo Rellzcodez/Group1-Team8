@@ -123,9 +123,7 @@ form input:not([type='checkbox']) {
     pointer-events: none;
 }
 span{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+   
     left: 550px; 
     color: #9B9B9B;
     pointer-events: none;
@@ -155,7 +153,8 @@ input{
     justify-content: space-between;
     font-weight: 600;
     font-size: 13px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 
