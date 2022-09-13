@@ -123,6 +123,7 @@ form input:not([type='checkbox']) {
     pointer-events: none;
 }
 span{
+   
     left: 550px; 
     color: #9B9B9B;
     
