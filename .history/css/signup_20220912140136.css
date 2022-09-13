@@ -63,85 +63,13 @@ form input:not([type='checkbox']) {
     color: #858A9B;
 }
 
-.input-group {
-    width: 100%;
-    position: relative;
-}
-.input-group input {
-    padding: 12px 40px 12px 20px;
-    outline: none;
-    border-radius: 6px;
-    border: 1px solid #AEB1BD;
-    width: 100%;
-    transition: all .3s ease;
-}
-
-/* Validation */
-  .input-group input:focus,
-.input-group input:not(:placeholder-shown) {
-    border-color: #277FFE;
-    background: #F4F2FF;
-}
-.input-group input:focus + i,
-.input-group input:not(:placeholder-shown) + i {
-    color: #277FFE;
-}
-.input-group input:focus:valid {
-    box-shadow: 0 0 0 4px #AECFFF;
-}
-
-.input-group input:valid:not(:placeholder-shown) {
-    border-color:#23AE00;
-}
-.input-group input:valid:not(:placeholder-shown) + i {
-    color:#23AE00;
-}
-.input-group input:invalid:not(:placeholder-shown) {
-    border-color:#FE2727;
-}
-.input-group input:invalid:not(:placeholder-shown) + i {
-    color:#FE2727;
-}
-.input-group input:focus:invalid {
-    box-shadow: 0 0 0 4px #FFD2D2;
-}
-.input-group input:focus,
-.input-group input:focus:placeholder-shown {
-    box-shadow: 0 0 0 4px #AECFFF;
-}  
-
-
-/* Validation */
-
-
-  .input-group i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px; 
-    color: #9B9B9B;
-    pointer-events: none;
-}
-span{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 550px; 
-    color: #9B9B9B;
-    pointer-events: none;
-    
-}
- span.help-text {
-    font-size: 12px;
-    color: #9B9B9B;
-    
-}
 input{
     margin: 0 auto;
 }
 #fullname, #emailAddress, #password {
     outline: none;
     border-radius: 6px;
+    border: 1px solid #AEB1BD;
     width: 100%;
     transition: all .3s ease;
 }
@@ -155,8 +83,7 @@ input{
     justify-content: space-between;
     font-weight: 600;
     font-size: 13px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 

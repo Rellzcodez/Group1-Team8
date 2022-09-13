@@ -71,7 +71,7 @@ form input:not([type='checkbox']) {
     padding: 12px 40px 12px 20px;
     outline: none;
     border-radius: 6px;
-    border: 1px solid #AEB1BD;
+    border: 1px solid #B7B7B7;
     width: 100%;
     transition: all .3s ease;
 }
@@ -126,10 +126,9 @@ span{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 550px; 
+    right: x; 
     color: #9B9B9B;
     pointer-events: none;
-    
 }
  span.help-text {
     font-size: 12px;
@@ -142,6 +141,7 @@ input{
 #fullname, #emailAddress, #password {
     outline: none;
     border-radius: 6px;
+    border: 1px solid #AEB1BD;
     width: 100%;
     transition: all .3s ease;
 }
@@ -155,8 +155,7 @@ input{
     justify-content: space-between;
     font-weight: 600;
     font-size: 13px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 
