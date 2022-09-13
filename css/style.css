@@ -1014,7 +1014,7 @@ left: -10px;
   }
   .gym-locations-container {
     margin: 10px;
-    height: 5350px;
+    height: 5100px;
   }
   .dumbbell-logo-wrapper {
     width: 250px;
@@ -1030,7 +1030,7 @@ left: -10px;
   }
   .image img {
     width: 90vw;
-    /* height: 240px; */
+    height: 45vh;
   }
   .description {
     position: relative;
