@@ -498,6 +498,7 @@ html {
 }
 
 .see-all-session-lable{
+  letter-spacing: 1px;
   font-weight: 700;
 }
 
@@ -588,7 +589,9 @@ html {
   border: none;
   padding: 11px 60px;
   border-radius: 10px;
+  font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
   transform: all;
   transition: 0.4s;
 }
@@ -617,7 +620,7 @@ html {
   height: 50px;
   border-radius: 5px;
   border: none;
-  padding-left: 5px;
+  padding: 30px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -936,10 +939,14 @@ left: -10px;
   justify-content: center;
   width: 418px;
   height: 669px;
+  transform: all;
+  transition: 0.10s;
+}
+.card:hover{
+  /* data-aos="fade-in" */
 }
 .image img {
   width: 419px;
-  height: 300px;
   padding: 23px 10px 10px 10px;
 }
 .description {
@@ -948,10 +955,9 @@ left: -10px;
   text-align: center;
   color: var(--white);
   font-size: 20px;
-  line-height: 36px;
-  width: 245px;
+  line-height: 40px;
   padding: 30px;
-  left: 75px;
+  margin-top: 30px;
 }
 .book-a-session-btn {
   position: relative;
@@ -979,7 +985,7 @@ left: -10px;
   transform: scale(105%);
 }
 .special {
-  top: 30px;
+  /* top: 30px; */
 }
 .get-started {
   position: relative;
@@ -1017,7 +1023,7 @@ left: -10px;
   }
   .gym-locations-container {
     margin: 10px;
-    height: 4970px;
+    height: 5170px;
   }
   .dumbbell-logo-wrapper {
     width: 250px;
@@ -1028,28 +1034,24 @@ left: -10px;
     flex-direction: column;
   }
   .card {
-    width: 320px;
-    height: 490px;
+    width:90vw;
+    height: 90vh;
   }
   .image img {
-    width: 320px;
-    height: 240px;
+    width: 90vw;
+    height: 45vh;
   }
   .description {
     position: relative;
     font-size: 16px;
-    line-height: 25px;
-    width: 250px;
-    padding: 50px;
-    top: -50px;
-    left: 25px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding: 20px;
   }
   .book-a-session-btn {
     position: relative;
-    top: -95px;
   }
   .special {
-    top: -70px;
   }
 
   .book-a-session {
