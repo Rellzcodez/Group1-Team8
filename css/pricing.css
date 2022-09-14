@@ -17,6 +17,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 a{
   font-family: "Poppins", sans-serif;
   text-decoration: none;
@@ -92,7 +98,7 @@ html {
   border: 3px solid var(--denim-blue);
 }
 .register-login {
-  width: 255px;
+  width: 225px;
   height: 55px;
   background: var(--white);
   border-radius: 5px;
@@ -116,7 +122,7 @@ html {
 }
 
 /* Navbar Responsiveness */
-@media (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 786px){
     .head-title,
     .hamburger,
     .mobile-registration{
@@ -231,14 +237,111 @@ html {
     }
 }
 
+/* THE PRICING STYLING STARTS HERE */
+
+#gold_price h2, #standard_price h2, #premium_price h2 {
+  margin-bottom: 1rem;
+  margin-left: 35rem;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0.4em;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: rgb(58, 13, 13);
+}
+
+#gold_price button, #standard_price button, #premium_price button {
+  padding: 21px 36px;
+  width: 290px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(221, 198, 70, 0.781),rgba(214, 191, 60, 0.788),rgba(179, 156, 29, 0.856));
+  outline: none;
+  border: none;
+  color: rgba(241, 248, 246, 0.986);
+  border-radius: 20px;
+  margin: 390px 0 0 900px;
+  position: absolute;
+}
+
+#gold_price button:hover, #standard_price button:hover, #premium_price button:hover {
+  background: linear-gradient(to left, rgba(221, 198, 70, 0.781),rgba(214, 191, 60, 0.788),rgba(179, 156, 29, 0.856));
+  transform: scale(105%);
+  box-shadow: 2px 4px 15px black;
+}
+
+#list_content {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 1rem 0;
+  line-height: 5rem;
+  letter-spacing: 1px;
+  width: 45vw;
+  text-align: center;
+  margin-left: 30rem;
+  position: absolute;
+  color: #FFFFFF;
+}
+
+ol {
+  list-style: none;
+}
+
+#box {
+  position: absolute;
+  height: 35rem;
+  width: 25rem;
+  margin-left: 41px;
+  border-radius: 16px;
+}
+
+
+#box:hover{
+    transform: scale(105%); 
+    box-shadow: 10px 4px 10px 0 black;
+    transform: scale(105%);
+    outline: none;
+    border: none;
+  }
+
+ #standard_price, #gold_price, #premium_price {
+  height: 45rem;
+  margin: 3rem 1rem 0 1rem;
+  border-radius: 40px;
+  background: linear-gradient(to right, rgb(180, 239, 245),
+  rgb(132, 175, 185),
+  rgb(81, 107, 121),
+  rgb(43, 56, 73),
+  rgb(18, 23, 42));
+
+}
+
+@media (max-width: 349px) {
+ .pricing_container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
+
+
 
 /* FOOTER */
 
 .footer{
+    font-size: 25px;
+    margin-top: 5rem;
     position: relative;
-    top: 100%;
-    bottom: 0;
-    height: 250px;
+    margin-bottom: 20px;
+    height: 350px;
     padding: 20px 45px;
     background: url(../images/illustration-hero.png) 920px 10px / 350px 350px no-repeat rgb(28, 38, 80);
   }
@@ -249,13 +352,17 @@ html {
     display: flex;
   }
   .footer-title header{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     padding: 45px 0 0 10px;
     color: var(--white);
   }
   .icons{
-    margin: 0;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-evenly;
   }
   .icons a{
     margin: 0 5px;
@@ -273,8 +380,9 @@ html {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 150px;
+    height: 205px;
     margin: 30px 0 0 200px;
+    font-size: 25px;
   }
   .navigation-footer a{
     margin: 10px 40px;
@@ -292,6 +400,11 @@ html {
   .navigation-footer a{
     color: var(--white);
   }
+
+  .copyright{
+    margin-left: 55px;
+  }
+
   
   /* FOOTER RESPONSIVENESS */
   @media (max-width:600px) {
