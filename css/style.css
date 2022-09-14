@@ -144,6 +144,8 @@ html {
   transform: scale(1);
   transition: 0.5s ease-in-out;
   position: relative;
+  width: 100vw;
+  flex: 0 0 auto;
 }
 #slide-2{
   background: url(../images/slide-2.jpg) no-repeat;
@@ -210,7 +212,7 @@ html {
   cursor: pointer;
   margin: 0 5px;
 }
-.tracker.active-track {
+.tracker.clicked{
   width: 15px;
   height: 15px;
   background: var(--baby-blue);
@@ -333,9 +335,14 @@ html {
   }
   .slide{
     height: 428px;
-    width: 100%;
+    width: 100vw;
+    flex: 0 0 auto;
     transition: all 0.4s;
   }
+  .clicked, .tracker:hover {
+    background: var(--baby-blue);
+  }
+
   #slide-2{
     background: url(../images/slide-2.jpg) center / 520px 450px no-repeat;
   }
@@ -419,6 +426,7 @@ html {
 }
 #slide-2,#slide-3,#slide-4,#slide-5,
 #slide-6,#slide-7,#slide-8{
+  filter: blur(0px);
   background-size: cover;
   background-position: top center;
 }
@@ -755,6 +763,7 @@ left: -10px;
     display: flex;
     justify-content: space-between;
     margin: 80px 100px 60px;
+    cursor: pointer;
 }
 .cards{
     padding: 20px 40px;
