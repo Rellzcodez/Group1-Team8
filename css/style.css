@@ -1014,7 +1014,7 @@ left: -10px;
   }
   .gym-locations-container {
     margin: 10px;
-    height: 5170px;
+    height: 5180px;
   }
   .dumbbell-logo-wrapper {
     width: 250px;
@@ -1025,19 +1025,19 @@ left: -10px;
     flex-direction: column;
   }
   .card {
-    width:90vw;
+    width:88vw;
     height: 90vh;
   }
   .image img {
-    width: 90vw;
-    height: 45vh;
+    width: 88vw;
+    /* height: 45vh; */
   }
   .description {
     position: relative;
     font-size: 16px;
     line-height: 30px;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px 30px;
   }
   .book-a-session-btn {
     position: relative;
@@ -1067,7 +1067,7 @@ left: -10px;
     margin-bottom: 10px;
   }
   .get-started-btn {
-    padding: 0.6em 7em;
+    padding: 0.6em 6em;
   }
 
 }
