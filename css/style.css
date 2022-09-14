@@ -803,6 +803,7 @@ left: -10px;
 
   }
 
+ obere4u
 /* STAY FIT RESPONSIVENESS - MOBILE VIEW */
 
 @media (max-width: 600px) {
@@ -843,22 +844,6 @@ left: -10px;
     border: none;
   }
 
-  #calculate-bmi {
-    margin-top: 390px;
-    font-size: 1.5rem;
-    width: 10rem;
-    padding: 0 1rem 2rem;
-    margin-left: 6rem;
-    border: none;
-  }
-
-  .stay-fit-illustrator img{
-    margin-left: 70px;
-    width: 100vw;
-    height: 110vh;
-  }
-}
-
 /* STAY FIT ENDS HERE */
 
 /*LIVE SESSION */
@@ -866,18 +851,8 @@ left: -10px;
 #image-live-workout {
   position: absolute;
 }
-  
-.overlay {
-  margin: 0;
-  height: 10%;
-  width: 100%;
-  opacity: 1;
-  margin: 28px 32px 21px 32px;
-  border-radius: 40px;
-  width: 1376px;
-}
+ 
 /* live session */
-
 .live-Session-container{
   background: url(../images/live-session-workout.png) no-repeat; 
   margin: 0 30px 20px;
@@ -914,6 +889,33 @@ left: -10px;
   left: 15%;
   top: 25%;
   width: 350px;
+}
+
+/* LIVE SESSION RESPONSIVENESS */
+@media (max-width: 600px) {
+  .live-Session-container{
+    background: url(../images/live-session-workout.png) top center /
+    350px 200px no-repeat; 
+    margin: 0 15px 20px;
+    border-radius: 40px;
+  }
+  
+  .overlay{
+    text-align: center;
+    top: 15%;
+    height: 230px;
+  }
+  #fa-play{
+    font-size: 20px;
+    padding: 30px;
+  }
+  #live{
+    font-size: 20px;
+    width: 200px;
+    line-height: 25px;
+    top: 10%;
+    left: 18%;
+  }
 }
 
 /* LIVE SESSION RESPONSIVENESS */
