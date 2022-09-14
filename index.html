@@ -41,6 +41,9 @@
             </button>
             <div class="navigation-hamburger">
                 <a href="index.html">HOME</a>
+                <a href="/pages/choose_us.html" target="_blank" title=>CHOOSE US</a>
+                <a href="#">HOME</a>
+                <a href="/pages/choose_us.html" >CHOOSE US</a>
                 <a href="pages/choose_us.html" >CHOOSE US</a>
                 <a href="#" >PROGRAM</a>
                 <a href="pages/pricing.html" >PRICING</a>
@@ -51,51 +54,79 @@
             
         <!-- THE ILLUSTRATION SEGMENT -->
             <div class="container-illustration">
-                <div class="heading-btn slide" id="slide-1">
-                    <div>
-                    <h1 class="primary-heading">Once you learn to <span>quit</span>, 
-                    it becomes a <span>habit</span></h1>
-                    <a href="#"><button class="get-started">GET STARTED</button></a>
-                    </div>
+              <div class="heading-btn slide" id="slide-1">
+                <div class="heading-1">
+                  <h1 class="primary-heading">Once you learn to <span>quit</span>, 
+                  it becomes a <span>habit</span></h1>
+                  <a href="#"><button class="get-started">GET STARTED</button></a>
+                </div>
                 </div>
                 <div class="slide" id="slide-2">
-                    
+                  <div class="heading">
+                    <h1 class="primary-heading-22">Once you learn to <span>quit</span>, 
+                    it becomes a <span>habit</span></h1>
+                    <a href="#"><button class="get-started">GET STARTED</button></a>
+                  </div>
                 </div>
                 <div class="slide" id="slide-3">
-                    
+                  <div class="heading">
+                    <h1 class="primary-heading-22">Once you learn to <span>quit</span>, 
+                    it becomes a <span>habit</span></h1>
+                    <a href="#"><button class="get-started">GET STARTED</button></a>
+                  </div>
                 </div>
                 <div class="slide" id="slide-4">
-                    
+                  <div class="heading">
+                    <h1 class="primary-heading-2">Once you learn to <span>quit</span>, 
+                    it becomes a <span>habit</span></h1>
+                    <a href="#"><button class="get-started">GET STARTED</button></a>
+                  </div>
                 </div>
                 <div class="slide" id="slide-5">
-                    
+                  <div class="heading">
+                    <h1 class="primary-heading-2">Once you learn to <span>quit</span>, 
+                    it becomes a <span>habit</span></h1>
+                    <a href="#"><button class="get-started">GET STARTED</button></a>
+                  </div>
                 </div>
                 <div class="slide" id="slide-6">
-                    
+                  <div class="heading">
+                    <h1 class="primary-heading-2">Once you learn to <span>quit</span>, 
+                    it becomes a <span>habit</span></h1>
+                    <a href="#"><button class="get-started">GET STARTED</button></a>
+                  </div>
                 </div>
                 <div class="slide" id="slide-7">
-                    
+                  <div class="heading">
+                    <h1 class="primary-heading-2">Once you learn to <span>quit</span>, 
+                    it becomes a <span>habit</span></h1>
+                    <a href="#"><button class="get-started">GET STARTED</button></a>
+                  </div>
                 </div>
                 <div class="slide" id="slide-8">
-                    
+                  <div class="heading">
+                    <h1 class="primary-heading-2">Once you learn to <span>quit</span>, 
+                    it becomes a <span>habit</span></h1>
+                    <a href="#"><button class="get-started">GET STARTED</button></a>
+                  </div>
                 </div>
             </div>
             <div class="carousel-circle">
-                <a href="#slide-1">
-                    <div class="tracker"></div></a>
-                <a href="#slide-2">
+                <a href="#slide-1" onclick="currentSlide(0)">
+                    <div class="tracker active-track"></div></a>
+                <a href="#slide-2" onclick="currentSlide(1)">
                     <div class="tracker"></div>
-                </a><a href="#slide-3">
+                </a><a href="#slide-3" onclick="currentSlide(2)">
                     <div class="tracker"></div>
-                </a><a href="#slide-4">
+                </a><a href="#slide-4" onclick="currentSlide(3)">
                     <div class="tracker"></div>
-                </a><a href="#slide-5">
+                </a><a href="#slide-5" onclick="currentSlide(4)">
                     <div class="tracker"></div>
-                </a><a href="#slide-6">
+                </a><a href="#slide-6" onclick="currentSlide(5)">
                     <div class="tracker"></div>
-                </a><a href="#slide-7">
+                </a><a href="#slide-7" onclick="currentSlide(6)">
                     <div class="tracker"></div>
-                </a><a href="#slide-8">
+                </a><a href="#slide-8" onclick="currentSlide(7)">
                     <div class="tracker"></div>
                 </a>
             </div>
@@ -135,6 +166,27 @@
             </section>
         </div>
 
+
+    </main>
+    <!-- THE STAY FIT SESSION STARTS HERE -->
+    <section class="stay-fit-container">
+        <h3 class="stay-fit">STAY FIT</h3>
+        <div class="stay-fit-wrapper">
+            <div class="bmi_calculator">
+                <form action="" method="post">
+                    <input type="number"  step="0.01" name="Weight" id="your-weight" placeholder="Your Weight">
+                    <input type="number" step="0.01" name="height" id="your-height" placeholder="Your Height">
+                    <input type="submit" value="Calculate" id="calculate-bmi">
+                </form>
+            </div>
+            <div class="BMI">
+                <h2 class="know-your-bmi">KNOW YOUR B.M.I.</h2>
+            </div>
+            <div class="stay-fit-illustrator"><img src="images/Stay-fit.png" alt=""></div>
+        </div>
+    </section>
+    <!-- THE STAY FIT SESSION ENDS HERE -->
+    
         </main>
 
         <!-- THE STAY FIT SESSION STARTS HERE -->
@@ -172,9 +224,7 @@
     <!-- THE LIVE WORKOUT SESSION STARTS HERE -->
 
     <div class="live-Session-container">            
-        
          <div class="overlay">
-            <img src="../images/live-session-workout.png" alt="live-session-workout" id="image-live-workout">
             <h2 id="live">LIVE WORKOUT SESSION</h2>
             <i class="fa-sharp fa-solid fa-play" id="fa-play"></i>          
         </div>
@@ -309,7 +359,6 @@
               >
             </div>
           </div>
-          
 
           <div class="card">
             <div class="image">
@@ -468,7 +517,7 @@
                     </svg></a>
             </div>
             <div class="copyright">
-                <small>&copy; 2022 - TECHATHON 1.0 | GROUP 1 TEAM 8</small>
+                <small>&copy; GROUP 1 TEAM 8 2022. TECHATHON 1.0 | All rights reserved. </small>
             </div>
         </footer>
 

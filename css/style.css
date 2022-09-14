@@ -53,6 +53,8 @@ html {
   margin: 60px 0 40px 25px;
 }
 .primary-nav {
+  display: flex;
+  justify-content: space-evenly;
   width: 808px;
   height: 55px;
   background: var(--white);
@@ -64,7 +66,7 @@ html {
   padding: 0;
 }
 .other-nav-link {
-  margin: 15px 60px 10px 0;
+  margin: 15px 0px 10px 70px;
 }
 .other-nav-link a{
   transition: all 0.4s;
@@ -73,22 +75,19 @@ html {
   color: rgb(11, 197, 218);
 }
 .home-nav-link {
-  background: var(--baby-blue);
-  width: 130px;
+  position: relative;
+  width: 20px;
   height: 45px;
-  margin: 5px;
-  margin-right: 24px;
+  margin-top: 8px;
+  margin-right: 40px;
   border-radius: 5px;
-  border: 1px solid var(--light-grey);
-  text-align: center;
+  text-align: left;
   padding: 7px 0;
   transition: all 0.4s;
   cursor: pointer;
 }
-.home-nav-link:hover{
-  background: transparent;
-  border: 3px solid var(--denim-blue);
-}
+
+
 .register-login {
   width: 255px;
   height: 55px;
@@ -127,6 +126,8 @@ html {
   border-radius: 40px;
   margin: 0 32px 25px;
   overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 .heading-btn {
   background: url(../images/illustration-hero.png) right bottom / 573px 573px
@@ -142,6 +143,8 @@ html {
   transform: scale(1);
   transition: 0.5s ease-in-out;
   position: relative;
+  width: 100vw;
+  flex: 0 0 auto;
 }
 #slide-2{
   background: url(../images/slide-2.jpg) no-repeat;
@@ -172,11 +175,38 @@ html {
   line-height: 100px;
   margin: 56px 0 49px;
 }
-.primary-heading span {
-  text-decoration: underline;
-  color: var(--baby-blue);
+
+.heading-1 {
+  margin: 56px 0 49px 0;
 }
-.heading-btn a button {
+
+.primary-heading-2 {
+  font-size: 70px;
+  width: 40%;
+  color: rgb(236, 97, 143);
+  line-height: 100px;
+  margin: 56px 0 49px 32px;
+}
+
+.primary-heading-2 span{
+  color: rgb(224, 224, 241);
+  text-decoration: underline;
+}
+
+.primary-heading-22 {
+  font-size: 70px;
+  width: 40%;
+  color: rgb(199, 11, 11);
+  line-height: 100px;
+  margin: 56px 0 49px 32px;
+}
+
+.primary-heading-22 span {
+  color: royalblue;
+  text-decoration: underline;
+}
+
+.heading a button {
   background: var(--baby-blue);
   border-radius: 10px;
   padding: 10px 132px;
@@ -184,15 +214,33 @@ html {
   cursor: pointer;
   transition: all .4s;
 }
-.get-started {
-  font-size: 16px;
-  font-weight: 800;
+
+.primary-heading span {
+  text-decoration: underline;
+  color: var(--baby-blue);
 }
-.heading-btn a button:hover{
+.heading-btn a button, .heading a button {
+  background: linear-gradient(to right, rgb(14, 61, 66), rgb(180, 239, 245));
+  border-radius: 10px;
+  padding: 10px 132px;
+  border: none;
+  cursor: pointer;
+  transition: all .4s;
+  margin-left: 40px;
+}
+.get-started, .heading .get-started {
+  font-size: 18px;
+  font-weight: 800;
+  color: brown;
+  letter-spacing: 3px;
+}
+.heading-btn a button:hover, .heading a button:hover {
   color:var(--black);
-  box-shadow: 2px 5px 15px var(--denim-blue);
+  box-shadow: 2px 5px 5px var(--denim-blue);
   transform: scale(105%);
-  margin-left: 15px;
+  margin-right: 1px;
+  background: linear-gradient(to right, rgb(180, 239, 245),rgb(14, 61, 66));
+  color: rgb(243, 234, 234);
 }
 .carousel-circle {
   display: flex;
@@ -208,9 +256,9 @@ html {
   cursor: pointer;
   margin: 0 5px;
 }
-.tracker.active-track {
-  width: 20px;
-  height: 20px;
+.tracker.clicked{
+  width: 15px;
+  height: 15px;
   background: var(--baby-blue);
 }
 
@@ -222,18 +270,19 @@ html {
   .mobile-get-started{
     display: initial;
   }
+
   .navigation{
     display: none;
   }
   .hamburger{
-    display: block;
+    position: fixed;
     width: 30px;
     height: 30px;
     background: var(--baby-blue);
     border: none;
     border-radius: 10px;
     padding: 0px 5px;
-    margin: 10px 15px 10px 0;
+    margin: 10px 15px 10px 450px;
   }
   .hamburger-bar,
   .hamburger::before,
@@ -312,8 +361,10 @@ html {
     height: 50px;
   }
   .head-title{
+    position: absolute;
+    margin-left: 300px;
     color: var(--white);
-    padding: 12px;
+    padding: 10px;
   }
   
   /* Illustration-hero */
@@ -331,9 +382,14 @@ html {
   }
   .slide{
     height: 428px;
-    width: 100%;
+    width: 100vw;
+    flex: 0 0 auto;
     transition: all 0.4s;
   }
+  .clicked, .tracker:hover {
+    background: var(--baby-blue);
+  }
+
   #slide-2{
     background: url(../images/slide-2.jpg) center / 520px 450px no-repeat;
   }
@@ -417,6 +473,7 @@ html {
 }
 #slide-2,#slide-3,#slide-4,#slide-5,
 #slide-6,#slide-7,#slide-8{
+  filter: blur(0px);
   background-size: cover;
   background-position: top center;
 }
@@ -488,6 +545,7 @@ html {
 }
 
 .see-all-session-lable{
+  letter-spacing: 1px;
   font-weight: 700;
 }
 
@@ -530,27 +588,14 @@ html {
   }
 }
 
-
-.live-workout{margin: 10px 50px 10px 10px; 
-  position: relative; left: 50px;
-display: flex;
-  flex-direction: column;
-width: 90%;}
-.live{color: var(--white);
-  position: relative; bottom: 450px; 
-  width: 400px;
-  padding-left: 100px;
-  font-weight: 600;
-  text-align: center;
-}
-
-
 /* Stay Fit */
+.stay-fit-container{
+  width: 1374px;
+}
 .stay-fit-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right,
     rgb(180, 239, 245, 0.8),
     rgb(12, 21, 56)
@@ -558,6 +603,10 @@ width: 90%;}
   border-radius: 40px;
   margin: 33px 32px 34.75px 32px;
   overflow: hidden;
+}
+
+.stay-fit{
+  text-align: center;
 }
 .stay-fit {
   font-family: "Poppins", sans-serif;
@@ -568,6 +617,68 @@ width: 90%;}
   letter-spacing: 7px;
 }
 
+.bmi_calculator {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#your-weight {
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  margin: 291px 638px 0 108px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 0.5px solid rgb(66, 41, 41);
+  padding: 15px 24px;
+  font-size: 20px;
+  
+}
+
+#your-height{
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  margin: 291px 638px 0 338px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 0.5px solid rgb(66, 41, 41);
+  padding: 15px 24px;
+  font-size: 20px;
+}
+
+#calculate-bmi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 24px;
+  gap: 6px;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  margin-left: 258px;
+  margin-top: 400px;
+  background: rgb(41, 45, 50);
+  color: #B4EFF5;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 10px;
+  
+}
+
+#calculate-bmi:hover {
+  background: linear-gradient(to right, rgba(180, 239, 245, 1), rgba(132, 175, 185, 1));
+  color: var(--black);
+  cursor: pointer;
+}
+
+.BMI{
+  position: absolute;
+  margin-top: 148px;
+  margin-left: 110px;
+}
 .stay-fit-wrapper {
   display: flex;
   justify-content: space-between;
@@ -581,11 +692,17 @@ width: 90%;}
   font-weight: 700;
   margin-top: 50px;
 }
+
+.stay-fit-illustrator img{
+  height: 600px;
+  border-radius: 40px;
+  padding-right: 76.63px;
+  margin-left: 600px;
+}
 .bmi-btn-wrapper{
   position: relative;
   margin-top: 100px;
   text-align: center;
-  
 }
 .bmi-calculate-btn{
   background-color: #292D32;
@@ -593,7 +710,9 @@ width: 90%;}
   border: none;
   padding: 11px 60px;
   border-radius: 10px;
+  font-size: 18px;
   font-weight: 700;
+  cursor: pointer;
   transform: all;
   transition: 0.4s;
 }
@@ -622,7 +741,7 @@ width: 90%;}
   height: 50px;
   border-radius: 5px;
   border: none;
-  padding-left: 5px;
+  padding: 30px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -684,45 +803,173 @@ left: -10px;
 
   }
 
-/* live session */
+/* STAY FIT RESPONSIVENESS - MOBILE VIEW */
+
+@media (max-width: 600px) {
+  .stay-fit-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bmi_calculator {
+    margin-left: 7rem;
+    margin-top: 4rem;
+  }
+
+  .BMI {
+    font-size: 1rem;
+    margin-left: 10rem;
+    padding-left: 2px;
+    color:rgba(245, 239, 239, 0.966) ;
+    font-weight: 700;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.212),rgba(0, 0, 0, 0.712),rgb(0, 0, 0), rgb(0, 0, 0),rgba(0, 0, 0, 0.678));
+  }
+  
+  #your-weight {
+    font-size: 1rem;
+    width: 11rem;
+    padding: 2rem;
+    margin-left: 0;
+    border: none;
+  }
+
+  #your-height {
+    font-size: 1rem;
+    width: 10rem;
+    padding: 1rem;
+    margin-left: 12rem ;
+    border: none;
+  }
+
+  #calculate-bmi {
+    margin-top: 390px;
+    font-size: 1.5rem;
+    width: 10rem;
+    padding: 0 1rem 2rem;
+    margin-left: 6rem;
+    border: none;
+  }
+
+  .stay-fit-illustrator img{
+    margin-left: 70px;
+    width: 100vw;
+    height: 110vh;
+  }
+}
+
+/* STAY FIT ENDS HERE */
+
+/*LIVE SESSION */
+
 #image-live-workout {
   position: absolute;
 }
   
 .overlay {
-  position: relative;
   margin: 0;
   height: 10%;
-  width: 10%;
+  width: 100%;
   opacity: 1;
   margin: 28px 32px 21px 32px;
   border-radius: 40px;
   width: 1376px;
+}
+/* live session */
+
+.live-Session-container{
+  background: url(../images/live-session-workout.png) no-repeat; 
+  margin: 0 30px 20px;
+  border-radius: 40px;
+}
+  
+.overlay {
+  position: relative;
+  width: 100%;
   height: 717px;
+  background: url(/images/live-session-workout.png);
+  background-repeat: no-repeat;
 }
   
 #fa-play {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   color: rgba(197, 23, 23, 1);
   font-size: 50px;
-  margin: 250px 584px 227px 552px;
   padding: 80px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 100%;
 }
 
 #live {
-  font-family: Poppins;
   text-align: center;
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
   position: absolute;
+  left: 15%;
+  top: 25%;
   width: 350px;
-  height: 60px;
-  margin: 206px 1023px 451px 43px;
 }
+
+/* LIVE SESSION RESPONSIVENESS */
+@media (max-width: 600px) {
+  .live-Session-container{
+    background: url(../images/live-session-workout.png) top center /
+    350px 200px no-repeat; 
+    margin: 0 15px 20px;
+    border-radius: 40px;
+  }
+  
+  .overlay{
+    text-align: center;
+    top: 15%;
+    height: 230px;
+  }
+  #fa-play{
+    font-size: 20px;
+    padding: 30px;
+  }
+  #live{
+    font-size: 20px;
+    width: 200px;
+    line-height: 25px;
+    top: 10%;
+    left: 18%;
+  }
+}
+
+/* LIVE Sessions Responsiveness - Mobile View */
+@media (max-width: 600px) {
+  
+  .overlay{
+    width: 88vw;
+    height: 100vh;
+    background: url(/images/live-session-workout.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    border: 2px solid;
+    outline: none;
+    
+    
+  }
+  
+  #fa-play{
+    margin: 290px 3px 0px 190px;
+    padding: 1rem;
+  }
+  #live {
+    margin: 6px 3px 0px 30px;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* LIVE SESSION Ends Here */
 
 
 /* Pricing Session */
@@ -744,6 +991,7 @@ left: -10px;
     display: flex;
     justify-content: space-between;
     margin: 80px 100px 60px;
+    cursor: pointer;
 }
 .cards{
     padding: 20px 40px;
@@ -916,10 +1164,14 @@ left: -10px;
   justify-content: center;
   width: 418px;
   height: 669px;
+  transform: all;
+  transition: 0.10s;
+}
+.card:hover{
+  /* data-aos="fade-in" */
 }
 .image img {
   width: 419px;
-  height: 300px;
   padding: 23px 10px 10px 10px;
 }
 .description {
@@ -928,10 +1180,9 @@ left: -10px;
   text-align: center;
   color: var(--white);
   font-size: 20px;
-  line-height: 36px;
-  width: 245px;
+  line-height: 40px;
   padding: 30px;
-  left: 75px;
+  margin-top: 30px;
 }
 .book-a-session-btn {
   position: relative;
@@ -959,7 +1210,7 @@ left: -10px;
   transform: scale(105%);
 }
 .special {
-  top: 30px;
+  /* top: 30px; */
 }
 .get-started {
   position: relative;
@@ -997,7 +1248,7 @@ left: -10px;
   }
   .gym-locations-container {
     margin: 10px;
-    height: 4970px;
+    height: 5170px;
   }
   .dumbbell-logo-wrapper {
     width: 250px;
@@ -1008,28 +1259,24 @@ left: -10px;
     flex-direction: column;
   }
   .card {
-    width: 320px;
-    height: 490px;
+    width:90vw;
+    height: 90vh;
   }
   .image img {
-    width: 320px;
-    height: 240px;
+    width: 90vw;
+    height: 45vh;
   }
   .description {
     position: relative;
     font-size: 16px;
-    line-height: 25px;
-    width: 250px;
-    padding: 50px;
-    top: -50px;
-    left: 25px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding: 20px;
   }
   .book-a-session-btn {
     position: relative;
-    top: -95px;
   }
   .special {
-    top: -70px;
   }
 
   .book-a-session {
