@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="stylesheet" href="css/style.css" />  
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
   
     <body>
@@ -21,9 +20,9 @@
                 <div class="navigation">
                     <div class="primary-nav">
                         <ul class="nav-links">
-                            <li class="home-nav-link"><a href="index.html">HOME</a></li>
+                            <li class="home-nav-link"><a href="#">HOME</a></li>
                             <li class="other-nav-link"><a href="pages/choose_us.html">CHOOSE US</a></li>
-                            <li class="other-nav-link"><a href="pages/program.html">PROGRAM</a></li>
+                            <li class="other-nav-link"><a href="#">PROGRAM</a></li>
                             <li class="other-nav-link"><a href="pages/pricing.html">PRICING</a></li>
                             <li class="other-nav-link"><a href="pages/support.html">SUPPORT</a></li>
                         </ul>
@@ -42,10 +41,8 @@
             </button>
             <div class="navigation-hamburger">
                 <a href="index.html">HOME</a>
-                <a href="pages/choose_us.html" target="_blank" title="">CHOOSE US</a>
-                <a href="index.html">HOME</a>
                 <a href="pages/choose_us.html" >CHOOSE US</a>
-                <a href="pages/program.html" >PROGRAM</a>
+                <a href="#" >PROGRAM</a>
                 <a href="pages/pricing.html" >PRICING</a>
                 <a href="pages/support.html" >SUPPORT</a>
             </div>
@@ -84,21 +81,21 @@
                 </div>
             </div>
             <div class="carousel-circle">
-                <a href="#slide-1">
+                <a href="#slide-1" onclick="currentSlide(0)">
                     <div class="tracker active-track"></div></a>
-                <a href="#slide-2">
+                <a href="#slide-2" onclick="currentSlide(1)">
                     <div class="tracker"></div>
-                </a><a href="#slide-3">
+                </a><a href="#slide-3" onclick="currentSlide(2)">
                     <div class="tracker"></div>
-                </a><a href="#slide-4">
+                </a><a href="#slide-4" onclick="currentSlide(3)">
                     <div class="tracker"></div>
-                </a><a href="#slide-5">
+                </a><a href="#slide-5" onclick="currentSlide(4)">
                     <div class="tracker"></div>
-                </a><a href="#slide-6">
+                </a><a href="#slide-6" onclick="currentSlide(5)">
                     <div class="tracker"></div>
-                </a><a href="#slide-7">
+                </a><a href="#slide-7" onclick="currentSlide(6)">
                     <div class="tracker"></div>
-                </a><a href="#slide-8">
+                </a><a href="#slide-8" onclick="currentSlide(7)">
                     <div class="tracker"></div>
                 </a>
             </div>
@@ -132,7 +129,7 @@
                     </div>   
         
                 </div>
-             <label class="see-all-session-lable" for="section"><a href="#"><u>See All Sessions <span class="arrow-vector"><img src="images/arrow-vector.png" alt="arrow" width="20px"></span></u></a></label>
+             <label class="see-all-session-lable" for="section"><a href="#"><u>see all sessions <span class="arrow-vector"><img src="images/arrow-vector.png" alt="arrow" width="20px"></span></u></a></label>
 
     
             </section>
@@ -239,49 +236,49 @@
           <div class="lagos"><h3>LAGOS</h3></div>
         </div>
         <div class="lagos-card-wrapper">
-          <div class="card" data-aos="slide-up" data-aos-duration="3000">
+          <div class="card">
             <div class="image">
               <img src="images/gym-studio-leki-lagos.png" alt="gym studio" />
             </div>
-            <div class="description" data-aos="zoom-in-right" data-aos-delay="50" data-aos-duration="3000">
-              The gym studio LEKI, Lagos. connect with an Instructor now to book
+            <div class="description">
+              The gym studio LEKI, Lagos, connect with an Instructor now to book
               a session.
             </div>
             <div class="book-a-session-btn special">
               <a href="#"
-                ><button class="book-a-session">Book A Session</button></a
+                ><button class="book-a-session">Book a session</button></a
               >
             </div>
           </div>
 
-          <div class="card"data-aos="slide-down"data-aos-duration="3000">
+          <div class="card">
             <div class="image">
               <img src="images/gym-studio-ikoyi-lagos.png" alt="gym studio" />
             </div>
-            <div class="description"data-aos="zoom-in-up" data-aos-duration="3000">
-              The gym studio IKOYI, Lagos. connect with an Instructor now to
+            <div class="description">
+              The gym studio IKOYI, Lagos, connect with an Instructor now to
               book a session.
             </div>
             <div class="book-a-session-btn special">
               <a href="#"
-                ><button class="book-a-session">Book A Session</button></a
+                ><button class="book-a-session">Book a session</button></a
               >
             </div>
           </div>
-          <div class="card"data-aos="slide-up"data-aos-duration="3000">
+          <div class="card">
             <div class="image">
               <img
                 src="images/gym-studio-victoria-island-lagos.png"
                 alt="gym studio"
               />
             </div>
-            <div class="description"data-aos="zoom-in-left" data-aos-duration="3000">
-              The gym studio Victoria Island, Lagos. connect with an Instructor
+            <div class="description">
+              The gym studio Victoria Island, Lagos, connect with an Instructor
               now to book a session.
             </div>
             <div class="book-a-session-btn">
               <a href="#"
-                ><button class="book-a-session">Book A Session</button></a
+                ><button class="book-a-session">Book a session</button></a
               >
             </div>
           </div>
@@ -296,46 +293,46 @@
           <div class="lagos"><h3>ABUJA</h3></div>
         </div>
         <div class="lagos-card-wrapper">
-          <div class="card"data-aos="fade-right"data-aos-duration="2000">
+          <div class="card">
             <div class="image">
               <img src="images/gym-studio-wuse-abuja.png" alt="gym studio" />
             </div>
-            <div class="description"data-aos="zoom-out-right" data-aos-duration="2000">
+            <div class="description">
               The gym studio Wuse, Abuja. Connect with an Instructor now to book
               a session.
             </div>
             <div class="book-a-session-btn special">
               <a href="#"
-                ><button class="book-a-session">Book A Session</button></a
+                ><button class="book-a-session">Book a session</button></a
               >
             </div>
           </div>
 
-          <div class="card"data-aos="fade-down"data-aos-duration="2000">
+          <div class="card">
             <div class="image">
               <img src="images/gym-studio-maitama-abuja.png" alt="gym studio" />
             </div>
-            <div class="description"data-aos="zoom-out-up" data-aos-duration="2000">
+            <div class="description">
               The gym studio Maidiama, Abuja. Connect with an Instructor now to
               book a session.
             </div>
             <div class="book-a-session-btn special">
               <a href="#"
-                ><button class="book-a-session">Book A Session</button></a
+                ><button class="book-a-session">Book a session</button></a
               >
             </div>
           </div>
-          <div class="card"data-aos="fade-left"data-aos-duration="2000">
+          <div class="card">
             <div class="image">
               <img src="images/gym-studio-asokoro-abuja.png" alt="gym studio" />
             </div>
-            <div class="description"data-aos="zoom-out-left" data-aos-duration="2000">
+            <div class="description">
               The gym studio Asokoro, Abuja. Connect with an Instructor now to
               book a session.
             </div>
             <div class="book-a-session-btn special">
               <a href="#"
-                ><button class="book-a-session">Book A Session</button></a
+                ><button class="book-a-session">Book a session</button></a
               >
             </div>
           </div>
@@ -350,49 +347,49 @@
           <div class="lagos"><h3>PORT HARCOURT</h3></div>
         </div>
         <div class="lagos-card-wrapper">
-          <div class="card"data-aos="zoom-in-right"data-aos-duration="2000">
+          <div class="card">
             <div class="image">
               <img
                 src="images/gym-studio-bonny-island-portharcut.png"
                 alt="gym studio"
               />
             </div>
-            <div class="description"data-aos="flip-up" data-aos-duration="2000">
+            <div class="description">
               The gym studio Bonny Island, Port harcut. Connect with an
               Instructor now to book a session.
             </div>
             <div class="book-a-session-btn">
               <a href="#"
-                ><button class="book-a-session">Book A Session</button></a
+                ><button class="book-a-session">Book a session</button></a
               >
             </div>
           </div>
 
-          <div class="card"data-aos="zoom-in-up"data-aos-duration="2000">
+          <div class="card">
             <div class="image">
               <img
                 src="images/gym-studio-abobiri-portharcut.png"
                 alt="gym studio"
               />
             </div>
-            <div class="description"data-aos="flip-right" data-aos-duration="2000">
+            <div class="description">
               The gym studio Abobiri, Port harcut. Connect with an Instructor
               now to book a session.
             </div>
             <div class="book-a-session-btn">
               <a href="#"
-                ><button class="book-a-session">Book A Session</button></a
+                ><button class="book-a-session">Book a session</button></a
               >
             </div>
           </div>
-          <div class="card"data-aos="zoom-in-left"data-aos-duration="2000">
+          <div class="card">
             <div class="image">
               <img
                 src="images/gym-studio-g-r-a-phase 1-portharcut.png"
                 alt="gym studio"
               />
             </div>
-            <div class="description"data-aos="flip-left" data-aos-duration="2000">
+            <div class="description">
               The gym studio G-R-A Phase 1, Port harcut. Connect with an
               Instructor now to book a session.
             </div>
@@ -448,9 +445,9 @@
                     </div>
                 </div>
                 <div class="navigation-footer">
-                    <a href="index.html">HOME</a>
+                    <a href="#">HOME</a>
                     <a href="pages/choose_us.html" >CHOOSE US</a>
-                    <a href="pages/program.html" >PROGRAM</a>
+                    <a href="#" >PROGRAM</a>
                     <a href="pages/pricing.html" >PRICING</a>
                     <a href="pages/support.html" >SUPPORT</a>
                 </div>
@@ -473,9 +470,5 @@
         </footer>
 
         <script src="js/script.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
     </body>
 </html>
